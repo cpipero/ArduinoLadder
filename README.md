@@ -1,6 +1,6 @@
 ArduinoLadder
 =============
-http://cpipero.github.io/arduinoladder
+http://cpipero.github.io/ArduinoLadder
 
 GUI application to create Arduino programs using ladder logic (like a PLC).
 
