@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LadderLogic", "LadderLogic.csproj", "{EC31E108-4964-4E61-823F-2077D48F1E15}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC31E108-4964-4E61-823F-2077D48F1E15}.Debug|x86.ActiveCfg = Debug|x86
+		{EC31E108-4964-4E61-823F-2077D48F1E15}.Debug|x86.Build.0 = Debug|x86
+		{EC31E108-4964-4E61-823F-2077D48F1E15}.Release|x86.ActiveCfg = Release|x86
+		{EC31E108-4964-4E61-823F-2077D48F1E15}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = LadderLogic.csproj
+	EndGlobalSection
+EndGlobal

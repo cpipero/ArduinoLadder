@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DrawingElement xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Primitives>
+    <Drawable xsi:type="LineElement">
+      <Alpha>1</Alpha>
+      <Foregraund>
+        <Red>1</Red>
+        <Green>0</Green>
+        <Blue>0</Blue>
+      </Foregraund>
+      <Weight>1</Weight>
+      <ZIndex>100</ZIndex>
+      <Start>
+        <X>0.5</X>
+        <Y>0.5</Y>
+      </Start>
+      <End>
+        <X>0.6</X>
+        <Y>0.5</Y>
+      </End>
+    </Drawable>
+    <Drawable xsi:type="ArcElement">
+      <Alpha>1</Alpha>
+      <Foregraund>
+        <Red>0</Red>
+        <Green>1</Green>
+        <Blue>0</Blue>
+      </Foregraund>
+      <Weight>2</Weight>
+      <ZIndex>10</ZIndex>
+      <Center>
+        <X>0.2</X>
+        <Y>0.2</Y>
+      </Center>
+      <GeometryRadius>0</GeometryRadius>
+      <Radius>0.1</Radius>
+      <ArcStart>-0.78539816339744828</ArcStart>
+      <ArcStop>1.0995574287564276</ArcStop>
+    </Drawable>
+    <Drawable xsi:type="TextElement">
+      <Alpha>1</Alpha>
+      <Foregraund>
+        <Red>0</Red>
+        <Green>0.5</Green>
+        <Blue>0</Blue>
+      </Foregraund>
+      <Weight>1</Weight>
+      <ZIndex>1</ZIndex>
+      <Text>Test</Text>
+      <Start>
+        <X>0.3</X>
+        <Y>0.3</Y>
+      </Start>
+      <FontFamily>Georgia</FontFamily>
+      <FontSize>20</FontSize>
+    </Drawable>
+    <Drawable xsi:type="Connector">
+      <Alpha>1</Alpha>
+      <Foregraund>
+        <Red>255</Red>
+        <Green>1</Green>
+        <Blue>1</Blue>
+      </Foregraund>
+      <Weight>1</Weight>
+      <ZIndex>1</ZIndex>
+      <Marker>Connector</Marker>
+      <Center>
+        <X>2</X>
+        <Y>2</Y>
+      </Center>
+      <Radius>2</Radius>
+    </Drawable>
+  </Primitives>
+</DrawingElement>

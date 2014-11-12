@@ -1,0 +1,23 @@
+﻿2. Identify elements with join on segments. 3 h
+3. Mark elements not passed to code. 4 h
+
+
++1 - the AVRDude calls still need to be implemented
++2 - the Timers and Latches do not generate any code
++3 - For timers, I do not know how to set the TimerOn value in the properties. See http://tinyurl.com/jvq4ns7 for reference.
++4 - Opening saved file does not work. If I have a diagram open, I cannot open a different diagram from a file.
++5 - The command will look for a file with *.ino extension (*.pde in some cases but we don't care about those). You are saving the code in *.cpp file so it doesn't work.
++1. Schema with latch have not opened correctly.
++1. Utilize one xml reader for all. 1 h
++2. Function override combobox expanded with window resize. 1 h 
++3. Modify elements pictograms for paste functions properly. 4 h
++4. Fix splash on generate code button. 2 h
++5. Latch have 2 paramaters, but function shown on 3.
++1. Generate Latch R elements code in propper sequence. 2 h 		long_latch
++8. Create screenshot from diagramma. 3 h
++3. Use menu for generated code for save. 3 h 
++1. Connect to PowerLine was not restored.
++4. Create table for pallette on the fly. 4 h
++3. Open multiple diagrams with open dialog. 8 h
++1. Latch R child is In, not Or. 4 h
++1. Add XOR to contact functions. 4 h 							test1	

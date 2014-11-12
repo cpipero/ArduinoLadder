@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DrawingElement xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Primitives>		
+		<Drawable xsi:type="ArcElement">
+	      <Alpha>1</Alpha>
+	      <Foregraund>
+	        <Red>0</Red>
+	        <Green>0.5</Green>
+	        <Blue>0</Blue>
+	      </Foregraund>
+	      <Weight>2</Weight>
+	      <ZIndex>10</ZIndex>
+	      <Center>
+	        <X>0.5</X>
+	        <Y>0.5</Y>
+	      </Center>
+	      <GeometryRadius>0</GeometryRadius>
+	      <Radius>0.35</Radius>
+	      <ArcStart>0</ArcStart>
+	      <ArcStop>6.28</ArcStop>
+	    </Drawable>
+	    <Drawable xsi:type="LineElement">
+			<!-- Left pin -->
+			<Alpha>1</Alpha>
+			<Foregraund>
+				<Red>0</Red>
+				<Green>0.5</Green>
+				<Blue>0</Blue>
+			</Foregraund>
+			<Weight>1</Weight>
+			<ZIndex>100</ZIndex>
+			<Start>
+				<X>0.42</X>
+				<Y>0.45</Y>
+			</Start>
+			<End>
+				<X>0.68</X>
+				<Y>0.5</Y>
+			</End>
+		</Drawable>
+		<Drawable xsi:type="LineElement">
+			<!-- Left pin -->
+			<Alpha>1</Alpha>
+			<Foregraund>
+				<Red>0</Red>
+				<Green>0.5</Green>
+				<Blue>0</Blue>
+			</Foregraund>
+			<Weight>1</Weight>
+			<ZIndex>100</ZIndex>
+			<Start>
+				<X>0.32</X>
+				<Y>0.5</Y>
+			</Start>
+			<End>
+				<X>0.68</X>
+				<Y>0.5</Y>
+			</End>
+		</Drawable>
+		<Drawable xsi:type="LineElement">
+			<!-- Left pin -->
+			<Alpha>1</Alpha>
+			<Foregraund>
+				<Red>0</Red>
+				<Green>0.5</Green>
+				<Blue>0</Blue>
+			</Foregraund>
+			<Weight>1</Weight>
+			<ZIndex>100</ZIndex>
+			<Start>
+				<X>0.42</X>
+				<Y>0.55</Y>
+			</Start>
+			<End>
+				<X>0.68</X>
+				<Y>0.5</Y>
+			</End>
+		</Drawable>
+
+	</Primitives>
+	<Type>Create</Type>
+	<Tooltip>Create C code.</Tooltip>
+</DrawingElement>

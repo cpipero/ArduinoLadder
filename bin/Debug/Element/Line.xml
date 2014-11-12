@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DrawingElement xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Primitives>
+		<Drawable xsi:type="LineElement">
+			<Alpha>1</Alpha>
+			<Foregraund>
+				<Red>0</Red>
+				<Green>0</Green>
+				<Blue>0</Blue>
+			</Foregraund>
+			<Weight>1</Weight>
+			<ZIndex>100</ZIndex>
+			<Start>
+				<X>0</X>
+				<Y>0.5</Y>
+			</Start>
+			<End>
+				<X>1</X>
+				<Y>0.5</Y>
+			</End>
+		</Drawable>
+	</Primitives>
+	<Type>Line</Type>
+	<Tooltip>Power line</Tooltip>
+	<Order>8</Order>
+</DrawingElement>

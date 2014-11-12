@@ -1,0 +1,3 @@
+D:\Eugene\Project\ladderlogic\ladderlogic\LadderLogic\Installer\Installer\bin\Debug\cab1.cab
+D:\Eugene\Project\ladderlogic\ladderlogic\LadderLogic\Installer\Installer\bin\Debug\Installer.msi
+D:\Eugene\Project\ladderlogic\ladderlogic\LadderLogic\Installer\Installer\bin\Debug\Installer.wixpdb

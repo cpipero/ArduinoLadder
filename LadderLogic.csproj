@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{EC31E108-4964-4E61-823F-2077D48F1E15}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>LadderLogic</RootNamespace>
+    <AssemblyName>LadderLogic</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="gtk-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="gdk-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="glib-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="glade-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="pango-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="atk-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Mono.Posix, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Mono.Cairo, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756" />
+    <Reference Include="System.Configuration" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="gtk-gui\gui.stetic">
+      <LogicalName>gui.stetic</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\DrawingArea.glade" />
+    <EmbeddedResource Include="Presentation\App.glade" />
+    <EmbeddedResource Include="Presentation\LadderLogicAboutDialog.glade" />
+    <EmbeddedResource Include="ladder_icon.bmp" />
+    <EmbeddedResource Include="ladder_icon.ico" />
+    <EmbeddedResource Include="Presentation\UnhandledExceptionDialog.glade" />
+    <EmbeddedResource Include="Libs\DefaultStyle.json" />
+    <EmbeddedResource Include="Presentation\SourceView.glade" />
+    <EmbeddedResource Include="Presentation\EnvironmentVariablesDialog.glade" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="gtk-gui\generated.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Drawing\ElementDrawing.cs" />
+    <Compile Include="File\DrawingFile\DrawingElement.cs" />
+    <Compile Include="File\DrawingFile\LineElement.cs" />
+    <Compile Include="File\DrawingFile\ArcElement.cs" />
+    <Compile Include="File\DrawingFile\Drawable.cs" />
+    <Compile Include="File\DrawingFile\Point.cs" />
+    <Compile Include="File\FileExtensions.cs" />
+    <Compile Include="File\DrawingFile\TextElement.cs" />
+    <Compile Include="File\DrawingFile\Color.cs" />
+    <Compile Include="MainWindow.cs" />
+    <Compile Include="gtk-gui\LadderLogic.MainWindow.cs" />
+    <Compile Include="Geometry\Proection.cs" />
+    <Compile Include="Surface\PrimitivesSurface.cs" />
+    <Compile Include="File\DrawingFile\Connector.cs" />
+    <Compile Include="Surface\Position.cs" />
+    <Compile Include="Surface\Segment.cs" />
+    <Compile Include="Brushes\LineBrush.cs" />
+    <Compile Include="Controller\DrawingAreaController.cs" />
+    <Compile Include="Presentation\DrawingAreaWindow.cs" />
+    <Compile Include="Brushes\ArcBrush.cs" />
+    <Compile Include="Brushes\TextBrush.cs" />
+    <Compile Include="Presentation\AppWindow.cs" />
+    <Compile Include="Controller\AppController.cs" />
+    <Compile Include="File\DrawingFile\RectangleElement.cs" />
+    <Compile Include="Brushes\RectangleBrush.cs" />
+    <Compile Include="Presentation\AboutDialog.cs" />
+    <Compile Include="Reader\ObjectCopier.cs" />
+    <Compile Include="File\DrawingFile\ElementType.cs" />
+    <Compile Include="Controller\State\CursorState.cs" />
+    <Compile Include="Controller\State\ElementState.cs" />
+    <Compile Include="Controller\State\PaletteState.cs" />
+    <Compile Include="Controller\State\LineState.cs" />
+    <Compile Include="Controller\State\EmptyState.cs" />
+    <Compile Include="Controller\State\State.cs" />
+    <Compile Include="Controller\State\InitState.cs" />
+    <Compile Include="Controller\State\StateType.cs" />
+    <Compile Include="Brushes\ConnectorBrush.cs" />
+    <Compile Include="Surface\Line.cs" />
+    <Compile Include="Brushes\SurfaceLineBrush.cs" />
+    <Compile Include="File\DrawingFile\AlignType.cs" />
+    <Compile Include="File\DrawingFile\VAlignType.cs" />
+    <Compile Include="File\DrawingFile\Arc3PointsElement.cs" />
+    <Compile Include="Brushes\Arc3PointsBrush.cs" />
+    <Compile Include="File\Config\LocalConfig.cs" />
+    <Compile Include="Reader\ConfigManager.cs" />
+    <Compile Include="Presentation\UnhandledExceptionDialog.cs" />
+    <Compile Include="CTool\CController.cs" />
+    <Compile Include="Surface\VariableType.cs" />
+    <Compile Include="CTool\FunctionRule\CoilRule.cs" />
+    <Compile Include="CTool\FunctionRule\LatchRule.cs" />
+    <Compile Include="CTool\FunctionRule\NcContactRule.cs" />
+    <Compile Include="CTool\FunctionRule\NotCoilRule.cs" />
+    <Compile Include="CTool\FunctionRule\OffTimerRule.cs" />
+    <Compile Include="CTool\FunctionRule\OnTimerRule.cs" />
+    <Compile Include="CTool\FunctionRule\PulseTimerRule.cs" />
+    <Compile Include="CTool\FunctionRule\FunctionRule.cs" />
+    <Compile Include="CTool\FunctionRule\NoContactRule.cs" />
+    <Compile Include="CTool\FunctionType.cs" />
+    <Compile Include="CTool\FunctionRule\ContactRule.cs" />
+    <Compile Include="Controller\State\PropertiesState.cs" />
+    <Compile Include="CTool\FunctionRule\FunctionTypeExtension.cs" />
+    <Compile Include="Presentation\SourceDialog.cs" />
+    <Compile Include="Surface\Variable.cs" />
+    <Compile Include="CTool\Arduino\EnvironmentVariables.cs" />
+    <Compile Include="Presentation\EnvironmentVariablesDialog.cs" />
+    <Compile Include="Controller\VariableExtensions.cs" />
+    <Compile Include="File\DrawingFile\ElementFunction.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Element\Coil.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Element\Latch.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Element\NotCoil.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="app.config" />
+    <None Include="Element\OnTimer.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Element\OffTimer.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Element\PulseTimer.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Element\Line.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Element\Cursor.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ladder_icon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="File\Config\ladderlogic.conf.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Element\Properties.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData\test1" />
+    <None Include="Documents\ArduinoLDEditor description.odt" />
+    <None Include="Documents\ladder examples and blocks.pdf" />
+    <None Include="Documents\LadderLogic examples.odt" />
+    <None Include="Documents\Ladder_Logic_GUI_for_Arduino.pdf" />
+    <None Include="CTool\CodeTemplate.c">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Element\NcContact.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Element\NoContact.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Documents\ProgrammingPLC.pdf" />
+    <None Include="TestData\test2" />
+    <None Include="Libs\Mono.TextEditor.dll.config" />
+    <None Include="Libs\Mono.TextEditor.xml" />
+    <None Include="Documents\Tasks.txt" />
+    <None Include="Buttons\CreateCode.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CTool\" />
+    <Folder Include="CTool\FunctionRule\" />
+    <Folder Include="CTool\Arduino\" />
+    <Folder Include="Buttons\" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Product Id="*" Name="Ladder Logic" Language="1033" Version="1.0.0.0" Manufacturer="arise-project.org.ua" UpgradeCode="5d40a58f-07bb-4ff7-a139-a2fdb4acd3a0">
+		<Package InstallerVersion="200" Compressed="yes" InstallScope="perUser" />
+
+		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+		<MediaTemplate />
+
+		<Feature Id="ProductFeature" Title="Installer" Level="1">
+			<ComponentGroupRef Id="ProductComponents" />
+		</Feature>
+	</Product>
+
+	<Fragment>
+		<Directory Id="TARGETDIR" Name="SourceDir">
+			<Directory Id="ProgramFilesFolder">
+				<Directory Id="INSTALLFOLDER" Name="LadderLogic"/>
+				<Directory Id="ProgramMenuFolder">
+					<Directory Id="ApplicationProgramsFolder" Name="Ladder Logic"/>
+				</Directory>
+			</Directory>
+		</Directory>
+		<DirectoryRef Id="INSTALLFOLDER">
+			<Component Id="Main" Guid="b17cb8a5-1e87-40da-99aa-5547b89031fd">
+				<File Id="LadderLogic_exe" Source="LadderLogic.exe"/>
+				<File Id="LadderLogic_pdb" Source="LadderLogic.pdb"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="ApplicationProgramsFolder">
+			<Component Id="ApplicationShortcut" Guid="c2768f2f-465a-46fa-b465-111f3c60bd40">
+				<Shortcut Id="ApplicationStartMenuShortcut"
+						 Name="Ladder Logic"
+					 Description="Ladder Logic"
+						Target="[#LadderLogic_exe]"
+									WorkingDirectory="APPLICATIONROOTDIRECTORY"/>
+				<Shortcut Id="UninstallProduct"
+									Name="Uninstall Ladder Logic"
+									Description="Uninstall Ladder Logic"
+									Target="[System64Folder]msiexec.exe"
+									Arguments="/x [ProductCode]"/>
+				<RemoveFolder Id="ApplicationProgramsFolder" On="uninstall"/>
+				<RegistryValue Root="HKCU" Key="Software\LadderLogic\LadderLogic" Name="installed" Type="integer" Value="1" KeyPath="yes"/>
+			</Component>
+		</DirectoryRef>
+	</Fragment>
+
+
+
+	<Fragment>
+		<ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
+			<ComponentRef Id="Main"/>
+			<ComponentRef Id="ApplicationShortcut"/>
+		</ComponentGroup>
+	</Fragment>
+</Wix>
