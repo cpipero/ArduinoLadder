@@ -6,7 +6,7 @@
     <property name="can_focus">False</property>
     <property name="destroy_with_parent">True</property>
     <property name="type_hint">normal</property>
-    <property name="program_name">LadderLogic for Arduino</property>
+    <property name="program_name">ArduinoLadder</property>
     <property name="version">0.1 (alpha)</property>
     <property name="copyright">Copyright (c) 2014 Costantino Pipero</property>
     <property name="website">http://01kos.com</property>
@@ -47,6 +47,9 @@ SOFTWARE.</property>
             <property name="pack_type">end</property>
             <property name="position">0</property>
           </packing>
+        </child>
+        <child>
+          <placeholder/>
         </child>
       </widget>
     </child>
