@@ -822,7 +822,7 @@
                     </child>
                     <child>
                       <widget class="GtkCheckButton" id="chbOverride">
-                        <property name="label" translatable="yes">Owerride</property>
+                        <property name="label" translatable="yes">Override</property>
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">False</property>

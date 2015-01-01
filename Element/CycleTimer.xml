@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DrawingElement xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Primitives>
+		<Drawable xsi:type="LineElement">
+			<!-- Left pin -->
+			<Alpha>1</Alpha>
+			<Foregraund>
+				<Red>0</Red>
+				<Green>0</Green>
+				<Blue>0</Blue>
+			</Foregraund>
+			<Weight>1</Weight>
+			<ZIndex>100</ZIndex>
+			<Start>
+				<X>0</X>
+				<Y>0.5</Y>
+			</Start>
+			<End>
+				<X>0.15</X>
+				<Y>0.5</Y>
+			</End>
+		</Drawable>
+		<Drawable xsi:type="LineElement">
+			<!-- Right pin -->
+			<Alpha>1</Alpha>
+			<Foregraund>
+				<Red>0</Red>
+				<Green>0</Green>
+				<Blue>0</Blue>
+			</Foregraund>
+			<Weight>1</Weight>
+			<ZIndex>100</ZIndex>
+			<Start>
+				<X>1</X>
+				<Y>0.5</Y>
+			</Start>
+			<End>
+				<X>0.85</X>
+				<Y>0.5</Y>
+			</End>
+		</Drawable>
+		<Drawable xsi:type="LineElement">
+			<!-- Left vertical line -->
+			<Alpha>1</Alpha>
+			<Foregraund>
+				<Red>0</Red>
+				<Green>0</Green>
+				<Blue>0</Blue>
+			</Foregraund>
+			<Weight>1</Weight>
+			<ZIndex>100</ZIndex>
+			<Start>
+				<X>0.15</X>
+				<Y>0.225</Y>
+			</Start>
+			<End>
+				<X>0.15</X>
+				<Y>0.775</Y>
+			</End>
+		</Drawable>
+		<Drawable xsi:type="LineElement">
+			<!-- Right vertical line -->
+			<Alpha>1</Alpha>
+			<Foregraund>
+				<Red>0</Red>
+				<Green>0</Green>
+				<Blue>0</Blue>
+			</Foregraund>
+			<Weight>1</Weight>
+			<ZIndex>100</ZIndex>
+			<Start>
+				<X>0.85</X>
+				<Y>0.225</Y>
+			</Start>
+			<End>
+				<X>0.85</X>
+				<Y>0.775</Y>
+			</End>
+		</Drawable>
+		<Drawable xsi:type="LineElement">
+			<!-- Top horizontal line -->
+			<Alpha>1</Alpha>
+			<Foregraund>
+				<Red>0</Red>
+				<Green>0</Green>
+				<Blue>0</Blue>
+			</Foregraund>
+			<Weight>1</Weight>
+			<ZIndex>100</ZIndex>
+			<Start>
+				<X>0.15</X>
+				<Y>0.225</Y>
+			</Start>
+			<End>
+				<X>0.85</X>
+				<Y>0.225</Y>
+			</End>
+		</Drawable>
+		<Drawable xsi:type="LineElement">
+			<!-- Bottom horizontal line -->
+			<Alpha>1</Alpha>
+			<Foregraund>
+				<Red>0</Red>
+				<Green>0</Green>
+				<Blue>0</Blue>
+			</Foregraund>
+			<Weight>1</Weight>
+			<ZIndex>100</ZIndex>
+			<Start>
+				<X>0.15</X>
+				<Y>0.775</Y>
+			</Start>
+			<End>
+				<X>0.85</X>
+				<Y>0.775</Y>
+			</End>
+		</Drawable>
+		<Drawable xsi:type="TextElement">
+			<!-- Timer type mark -->
+			<Alpha>1</Alpha>
+			<Foregraund>
+				<Red>0</Red>
+				<Green>0</Green>
+				<Blue>0.5</Blue>
+			</Foregraund>
+			<Weight>1</Weight>
+			<ZIndex>200</ZIndex>
+			<Text>TC</Text>
+			<Align>center</Align>
+			<VAlign>center</VAlign>
+			<Start>
+				<X>0.5</X>
+				<Y>0.5</Y>
+			</Start>
+			<FontFamily>Georgia</FontFamily>
+			<FontSize>20</FontSize>
+			<ScaledFontSize>0</ScaledFontSize>
+			<Marker>Caption</Marker>
+		</Drawable>
+		<Drawable xsi:type="TextElement">
+			<!-- Timer reference -->
+			<Alpha>1</Alpha>
+			<Foregraund>
+				<Red>0.5</Red>
+				<Green>0.5</Green>
+				<Blue>0.5</Blue>
+			</Foregraund>
+			<Weight>1</Weight>
+			<ZIndex>200</ZIndex>
+			<Text>{0}/{2}</Text>
+			<Align>center</Align>
+			<VAlign>center</VAlign>
+			<Start>
+				<X>0.5</X>
+				<Y>0.10</Y>
+			</Start>
+			<FontFamily>Georgia</FontFamily>
+			<FontSize>14</FontSize>
+			<ScaledFontSize>0</ScaledFontSize>
+			<Marker>Index</Marker>
+		</Drawable>
+		<Drawable xsi:type="TextElement">
+			<!-- Timer value -->
+			<Alpha>1</Alpha>
+			<Foregraund>
+				<Red>0</Red>
+				<Green>0.5</Green>
+				<Blue>0</Blue>
+			</Foregraund>
+			<Weight>1</Weight>
+			<ZIndex>200</ZIndex>
+			<Text>{1}ms/{3}ms</Text>
+			<Align>center</Align>
+			<VAlign>center</VAlign>
+			<Start>
+				<X>0.5</X>
+				<Y>0.65</Y>
+			</Start>
+			<FontFamily>Georgia</FontFamily>
+			<FontSize>14</FontSize>
+			<ScaledFontSize>0</ScaledFontSize>
+			<Marker>Period</Marker>
+		</Drawable>
+		<Drawable xsi:type="TextElement">
+			<!-- Contact alias -->
+			<Alpha>1</Alpha>
+			<Foregraund>
+				<Red>0</Red>
+				<Green>0.5</Green>
+				<Blue>0</Blue>
+			</Foregraund>
+			<Weight>1</Weight>
+			<ZIndex>200</ZIndex>
+			<Text>{Function}</Text>
+			<Align>left</Align>
+			<VAlign>center</VAlign>
+			<Start>
+				<X>0.1</X>
+				<Y>0.875</Y>
+			</Start>
+			<FontFamily>Georgia</FontFamily>
+			<FontSize>14</FontSize>
+			<ScaledFontSize>0</ScaledFontSize>
+			<Marker>Name</Marker>
+		</Drawable>
+		<Drawable xsi:type="Connector">
+			<Alpha>1</Alpha>
+			<Foregraund>
+				<Red>1</Red>
+				<Green>0</Green>
+				<Blue>0</Blue>
+			</Foregraund>
+			<Weight>1</Weight>
+			<ZIndex>50</ZIndex>
+			<Marker>ConLeft</Marker>
+			<Center>
+				<X>0</X>
+				<Y>0.5</Y>
+			</Center>
+			<Radius>0.03</Radius>
+		</Drawable>
+		<Drawable xsi:type="Connector">
+			<Alpha>1</Alpha>
+			<Foregraund>
+				<Red>1</Red>
+				<Green>0</Green>
+				<Blue>0</Blue>
+			</Foregraund>
+			<Weight>1</Weight>
+			<ZIndex>50</ZIndex>
+			<Marker>ConRight</Marker>
+			<Center>
+				<X>1</X>
+				<Y>0.5</Y>
+			</Center>
+			<Radius>0.03</Radius>
+		</Drawable>
+	</Primitives>
+	<Type>CycleTimer</Type>
+	<Tooltip>Cycle timer</Tooltip>
+	<Functions>
+		<ElementFunction>
+			<Function>TimerCycle</Function>
+			<Format>timerCycle({0},{1},{2},{3});</Format>
+		</ElementFunction>
+	</Functions>
+	<Order>10</Order>
+</DrawingElement>

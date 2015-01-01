@@ -2,7 +2,8 @@
 {
 	using Surface;
 
-	public class PulseTimerRule : FunctionRule
+	public class 
+	PulseTimerRule : FunctionRule
 	{
 		public PulseTimerRule()
 		{

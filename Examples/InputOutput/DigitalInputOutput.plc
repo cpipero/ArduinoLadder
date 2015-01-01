@@ -1,0 +1,1213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PrimitivesSurface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Segments>
+    <Segment>
+      <Function>None</Function>
+      <OverrideFunction>false</OverrideFunction>
+      <FunctionText>in(X0);</FunctionText>
+      <Variables>
+        <Variable>
+          <Type>Default</Type>
+          <Value>X0</Value>
+        </Variable>
+      </Variables>
+      <Values />
+      <Position>
+        <X>0</X>
+        <Y>0</Y>
+      </Position>
+      <Connectors>
+        <Connector>
+          <Alpha>1</Alpha>
+          <Foregraund>
+            <Red>1</Red>
+            <Green>0</Green>
+            <Blue>0</Blue>
+          </Foregraund>
+          <Weight>1</Weight>
+          <ZIndex>50</ZIndex>
+          <Marker>ConLeft</Marker>
+          <Center>
+            <X>0</X>
+            <Y>0.5</Y>
+          </Center>
+          <Radius>0.03</Radius>
+          <GeometryRadius>2.19</GeometryRadius>
+          <ConnectedTo>
+            <string>Plus</string>
+          </ConnectedTo>
+        </Connector>
+        <Connector>
+          <Alpha>1</Alpha>
+          <Foregraund>
+            <Red>1</Red>
+            <Green>0</Green>
+            <Blue>0</Blue>
+          </Foregraund>
+          <Weight>1</Weight>
+          <ZIndex>50</ZIndex>
+          <Marker>ConRight</Marker>
+          <Center>
+            <X>1</X>
+            <Y>0.5</Y>
+          </Center>
+          <Radius>0.03</Radius>
+          <GeometryRadius>2.19</GeometryRadius>
+          <ConnectedTo>
+            <string>a18c1379-39d8-41fa-9da5-a12c7ca00d3b</string>
+          </ConnectedTo>
+        </Connector>
+      </Connectors>
+      <Type>NcContact</Type>
+      <Identifier>6bd2ed66-6374-45db-b240-3124a85ec84e</Identifier>
+    </Segment>
+    <Segment>
+      <Function>None</Function>
+      <OverrideFunction>false</OverrideFunction>
+      <Variables />
+      <Values />
+      <Position>
+        <X>1</X>
+        <Y>0</Y>
+      </Position>
+      <Connectors />
+      <Type>None</Type>
+      <Identifier>28419c2c-d968-4c42-abd3-64af3efa3d08</Identifier>
+    </Segment>
+    <Segment>
+      <Function>None</Function>
+      <OverrideFunction>false</OverrideFunction>
+      <Variables />
+      <Values />
+      <Position>
+        <X>2</X>
+        <Y>0</Y>
+      </Position>
+      <Connectors />
+      <Type>None</Type>
+      <Identifier>c53a24c8-8751-4136-ace7-6caeac1e67cb</Identifier>
+    </Segment>
+    <Segment>
+      <Function>None</Function>
+      <OverrideFunction>false</OverrideFunction>
+      <Variables />
+      <Values />
+      <Position>
+        <X>3</X>
+        <Y>0</Y>
+      </Position>
+      <Connectors />
+      <Type>None</Type>
+      <Identifier>c3508e18-d359-4990-9d2e-f828960a6162</Identifier>
+    </Segment>
+    <Segment>
+      <Function>None</Function>
+      <OverrideFunction>false</OverrideFunction>
+      <Variables />
+      <Values />
+      <Position>
+        <X>4</X>
+        <Y>0</Y>
+      </Position>
+      <Connectors />
+      <Type>None</Type>
+      <Identifier>b4155a38-580e-41f7-b05b-ecfbf5e92482</Identifier>
+    </Segment>
+    <Segment>
+      <Function>None</Function>
+      <OverrideFunction>false</OverrideFunction>
+      <FunctionText>out(Y0);</FunctionText>
+      <Variables>
+        <Variable>
+          <Type>Default</Type>
+          <Value>Y0</Value>
+        </Variable>
+      </Variables>
+      <Values />
+      <Position>
+        <X>5</X>
+        <Y>0</Y>
+      </Position>
+      <Connectors>
+        <Connector>
+          <Alpha>1</Alpha>
+          <Foregraund>
+            <Red>1</Red>
+            <Green>0</Green>
+            <Blue>0</Blue>
+          </Foregraund>
+          <Weight>1</Weight>
+          <ZIndex>50</ZIndex>
+          <Marker>ConLeft</Marker>
+          <Center>
+            <X>0</X>
+            <Y>0.5</Y>
+          </Center>
+          <Radius>0.03</Radius>
+          <GeometryRadius>2.19</GeometryRadius>
+          <ConnectedTo>
+            <string>6bd2ed66-6374-45db-b240-3124a85ec84e</string>
+          </ConnectedTo>
+        </Connector>
+        <Connector>
+          <Alpha>1</Alpha>
+          <Foregraund>
+            <Red>1</Red>
+            <Green>0</Green>
+            <Blue>0</Blue>
+          </Foregraund>
+          <Weight>1</Weight>
+          <ZIndex>50</ZIndex>
+          <Marker>ConRight</Marker>
+          <Center>
+            <X>1</X>
+            <Y>0.5</Y>
+          </Center>
+          <Radius>0.03</Radius>
+          <GeometryRadius>2.19</GeometryRadius>
+          <ConnectedTo>
+            <string>Minus</string>
+          </ConnectedTo>
+        </Connector>
+      </Connectors>
+      <Type>Coil</Type>
+      <Identifier>a18c1379-39d8-41fa-9da5-a12c7ca00d3b</Identifier>
+    </Segment>
+    <Segment>
+      <Function>None</Function>
+      <OverrideFunction>false</OverrideFunction>
+      <FunctionText>inNot(X1);</FunctionText>
+      <Variables>
+        <Variable>
+          <Type>Default</Type>
+          <Value>X1</Value>
+        </Variable>
+      </Variables>
+      <Values />
+      <Position>
+        <X>0</X>
+        <Y>1</Y>
+      </Position>
+      <Connectors>
+        <Connector>
+          <Alpha>1</Alpha>
+          <Foregraund>
+            <Red>1</Red>
+            <Green>0</Green>
+            <Blue>0</Blue>
+          </Foregraund>
+          <Weight>1</Weight>
+          <ZIndex>50</ZIndex>
+          <Marker>ConLeft</Marker>
+          <Center>
+            <X>0</X>
+            <Y>0.5</Y>
+          </Center>
+          <Radius>0.03</Radius>
+          <GeometryRadius>2.19</GeometryRadius>
+          <ConnectedTo>
+            <string>Plus</string>
+          </ConnectedTo>
+        </Connector>
+        <Connector>
+          <Alpha>1</Alpha>
+          <Foregraund>
+            <Red>1</Red>
+            <Green>0</Green>
+            <Blue>0</Blue>
+          </Foregraund>
+          <Weight>1</Weight>
+          <ZIndex>50</ZIndex>
+          <Marker>ConRight</Marker>
+          <Center>
+            <X>1</X>
+            <Y>0.5</Y>
+          </Center>
+          <Radius>0.03</Radius>
+          <GeometryRadius>2.19</GeometryRadius>
+          <ConnectedTo>
+            <string>aa31e505-1908-470e-9796-b481f2da156d</string>
+          </ConnectedTo>
+        </Connector>
+      </Connectors>
+      <Type>NoContact</Type>
+      <Identifier>8839a14d-95e0-4fce-b2f4-98c42a93d488</Identifier>
+    </Segment>
+    <Segment>
+      <Function>None</Function>
+      <OverrideFunction>false</OverrideFunction>
+      <Variables />
+      <Values />
+      <Position>
+        <X>1</X>
+        <Y>1</Y>
+      </Position>
+      <Connectors />
+      <Type>None</Type>
+      <Identifier>8b3d82e7-210f-425a-8c7b-fd03aecd655f</Identifier>
+    </Segment>
+    <Segment>
+      <Function>None</Function>
+      <OverrideFunction>false</OverrideFunction>
+      <Variables />
+      <Values />
+      <Position>
+        <X>2</X>
+        <Y>1</Y>
+      </Position>
+      <Connectors />
+      <Type>None</Type>
+      <Identifier>f8388aad-b9be-4526-9dbd-15132d8257c8</Identifier>
+    </Segment>
+    <Segment>
+      <Function>None</Function>
+      <OverrideFunction>false</OverrideFunction>
+      <Variables />
+      <Values />
+      <Position>
+        <X>3</X>
+        <Y>1</Y>
+      </Position>
+      <Connectors />
+      <Type>None</Type>
+      <Identifier>2cc67330-8ab3-4b39-bfcd-57c98771c396</Identifier>
+    </Segment>
+    <Segment>
+      <Function>None</Function>
+      <OverrideFunction>false</OverrideFunction>
+      <Variables />
+      <Values />
+      <Position>
+        <X>4</X>
+        <Y>1</Y>
+      </Position>
+      <Connectors />
+      <Type>None</Type>
+      <Identifier>76748969-eaf5-48a9-8b2c-9ef459124789</Identifier>
+    </Segment>
+    <Segment>
+      <Function>None</Function>
+      <OverrideFunction>false</OverrideFunction>
+      <FunctionText>out(Y1);</FunctionText>
+      <Variables>
+        <Variable>
+          <Type>Default</Type>
+          <Value>Y1</Value>
+        </Variable>
+      </Variables>
+      <Values />
+      <Position>
+        <X>5</X>
+        <Y>1</Y>
+      </Position>
+      <Connectors>
+        <Connector>
+          <Alpha>1</Alpha>
+          <Foregraund>
+            <Red>1</Red>
+            <Green>0</Green>
+            <Blue>0</Blue>
+          </Foregraund>
+          <Weight>1</Weight>
+          <ZIndex>50</ZIndex>
+          <Marker>ConLeft</Marker>
+          <Center>
+            <X>0</X>
+            <Y>0.5</Y>
+          </Center>
+          <Radius>0.03</Radius>
+          <GeometryRadius>2.19</GeometryRadius>
+          <ConnectedTo>
+            <string>8839a14d-95e0-4fce-b2f4-98c42a93d488</string>
+          </ConnectedTo>
+        </Connector>
+        <Connector>
+          <Alpha>1</Alpha>
+          <Foregraund>
+            <Red>1</Red>
+            <Green>0</Green>
+            <Blue>0</Blue>
+          </Foregraund>
+          <Weight>1</Weight>
+          <ZIndex>50</ZIndex>
+          <Marker>ConRight</Marker>
+          <Center>
+            <X>1</X>
+            <Y>0.5</Y>
+          </Center>
+          <Radius>0.03</Radius>
+          <GeometryRadius>2.19</GeometryRadius>
+          <ConnectedTo>
+            <string>Minus</string>
+          </ConnectedTo>
+        </Connector>
+      </Connectors>
+      <Type>Coil</Type>
+      <Identifier>aa31e505-1908-470e-9796-b481f2da156d</Identifier>
+    </Segment>
+    <Segment>
+      <Function>None</Function>
+      <OverrideFunction>false</OverrideFunction>
+      <FunctionText>in(X2);</FunctionText>
+      <Variables>
+        <Variable>
+          <Type>Default</Type>
+          <Value>X2</Value>
+        </Variable>
+      </Variables>
+      <Values />
+      <Position>
+        <X>0</X>
+        <Y>2</Y>
+      </Position>
+      <Connectors>
+        <Connector>
+          <Alpha>1</Alpha>
+          <Foregraund>
+            <Red>1</Red>
+            <Green>0</Green>
+            <Blue>0</Blue>
+          </Foregraund>
+          <Weight>1</Weight>
+          <ZIndex>50</ZIndex>
+          <Marker>ConLeft</Marker>
+          <Center>
+            <X>0</X>
+            <Y>0.5</Y>
+          </Center>
+          <Radius>0.03</Radius>
+          <GeometryRadius>2.19</GeometryRadius>
+          <ConnectedTo>
+            <string>Plus</string>
+          </ConnectedTo>
+        </Connector>
+        <Connector>
+          <Alpha>1</Alpha>
+          <Foregraund>
+            <Red>1</Red>
+            <Green>0</Green>
+            <Blue>0</Blue>
+          </Foregraund>
+          <Weight>1</Weight>
+          <ZIndex>50</ZIndex>
+          <Marker>ConRight</Marker>
+          <Center>
+            <X>1</X>
+            <Y>0.5</Y>
+          </Center>
+          <Radius>0.03</Radius>
+          <GeometryRadius>2.19</GeometryRadius>
+          <ConnectedTo>
+            <string>fe0908e0-7e73-4fb6-8039-4ff59e79be36</string>
+          </ConnectedTo>
+        </Connector>
+      </Connectors>
+      <Type>NcContact</Type>
+      <Identifier>f9849aa7-e35d-4294-906f-cee47d7c1f5c</Identifier>
+    </Segment>
+    <Segment>
+      <Function>None</Function>
+      <OverrideFunction>false</OverrideFunction>
+      <Variables />
+      <Values />
+      <Position>
+        <X>1</X>
+        <Y>2</Y>
+      </Position>
+      <Connectors />
+      <Type>None</Type>
+      <Identifier>ade6f707-5f4e-4592-902b-16c0b127f809</Identifier>
+    </Segment>
+    <Segment>
+      <Function>None</Function>
+      <OverrideFunction>false</OverrideFunction>
+      <Variables />
+      <Values />
+      <Position>
+        <X>2</X>
+        <Y>2</Y>
+      </Position>
+      <Connectors />
+      <Type>None</Type>
+      <Identifier>29bcd8a8-1292-4885-90ef-3280eeb04e78</Identifier>
+    </Segment>
+    <Segment>
+      <Function>None</Function>
+      <OverrideFunction>false</OverrideFunction>
+      <Variables />
+      <Values />
+      <Position>
+        <X>3</X>
+        <Y>2</Y>
+      </Position>
+      <Connectors />
+      <Type>None</Type>
+      <Identifier>48f2e33e-629c-4aa3-8e39-8cc1b7efcc4d</Identifier>
+    </Segment>
+    <Segment>
+      <Function>None</Function>
+      <OverrideFunction>false</OverrideFunction>
+      <Variables />
+      <Values />
+      <Position>
+        <X>4</X>
+        <Y>2</Y>
+      </Position>
+      <Connectors />
+      <Type>None</Type>
+      <Identifier>c23edf95-f4fc-4c59-aa3c-7d51d0c9f232</Identifier>
+    </Segment>
+    <Segment>
+      <Function>None</Function>
+      <OverrideFunction>false</OverrideFunction>
+      <FunctionText>outNot(Y2);</FunctionText>
+      <Variables>
+        <Variable>
+          <Type>Default</Type>
+          <Value>Y2</Value>
+        </Variable>
+      </Variables>
+      <Values />
+      <Position>
+        <X>5</X>
+        <Y>2</Y>
+      </Position>
+      <Connectors>
+        <Connector>
+          <Alpha>1</Alpha>
+          <Foregraund>
+            <Red>1</Red>
+            <Green>0</Green>
+            <Blue>0</Blue>
+          </Foregraund>
+          <Weight>1</Weight>
+          <ZIndex>50</ZIndex>
+          <Marker>ConLeft</Marker>
+          <Center>
+            <X>0</X>
+            <Y>0.5</Y>
+          </Center>
+          <Radius>0.03</Radius>
+          <GeometryRadius>2.19</GeometryRadius>
+          <ConnectedTo>
+            <string>f9849aa7-e35d-4294-906f-cee47d7c1f5c</string>
+          </ConnectedTo>
+        </Connector>
+        <Connector>
+          <Alpha>1</Alpha>
+          <Foregraund>
+            <Red>1</Red>
+            <Green>0</Green>
+            <Blue>0</Blue>
+          </Foregraund>
+          <Weight>1</Weight>
+          <ZIndex>50</ZIndex>
+          <Marker>ConRight</Marker>
+          <Center>
+            <X>1</X>
+            <Y>0.5</Y>
+          </Center>
+          <Radius>0.03</Radius>
+          <GeometryRadius>2.19</GeometryRadius>
+          <ConnectedTo>
+            <string>Minus</string>
+          </ConnectedTo>
+        </Connector>
+      </Connectors>
+      <Type>NotCoil</Type>
+      <Identifier>fe0908e0-7e73-4fb6-8039-4ff59e79be36</Identifier>
+    </Segment>
+    <Segment>
+      <Function>None</Function>
+      <OverrideFunction>false</OverrideFunction>
+      <FunctionText>inNot(X3);</FunctionText>
+      <Variables>
+        <Variable>
+          <Type>Default</Type>
+          <Value>X3</Value>
+        </Variable>
+      </Variables>
+      <Values />
+      <Position>
+        <X>0</X>
+        <Y>3</Y>
+      </Position>
+      <Connectors>
+        <Connector>
+          <Alpha>1</Alpha>
+          <Foregraund>
+            <Red>1</Red>
+            <Green>0</Green>
+            <Blue>0</Blue>
+          </Foregraund>
+          <Weight>1</Weight>
+          <ZIndex>50</ZIndex>
+          <Marker>ConLeft</Marker>
+          <Center>
+            <X>0</X>
+            <Y>0.5</Y>
+          </Center>
+          <Radius>0.03</Radius>
+          <GeometryRadius>2.19</GeometryRadius>
+          <ConnectedTo>
+            <string>Plus</string>
+          </ConnectedTo>
+        </Connector>
+        <Connector>
+          <Alpha>1</Alpha>
+          <Foregraund>
+            <Red>1</Red>
+            <Green>0</Green>
+            <Blue>0</Blue>
+          </Foregraund>
+          <Weight>1</Weight>
+          <ZIndex>50</ZIndex>
+          <Marker>ConRight</Marker>
+          <Center>
+            <X>1</X>
+            <Y>0.5</Y>
+          </Center>
+          <Radius>0.03</Radius>
+          <GeometryRadius>2.19</GeometryRadius>
+          <ConnectedTo>
+            <string>6055cb97-21ba-4842-87ef-37fb7659aa7d</string>
+          </ConnectedTo>
+        </Connector>
+      </Connectors>
+      <Type>NoContact</Type>
+      <Identifier>10feb5ea-a5af-42db-af20-ec819d0bda8b</Identifier>
+    </Segment>
+    <Segment>
+      <Function>None</Function>
+      <OverrideFunction>false</OverrideFunction>
+      <Variables />
+      <Values />
+      <Position>
+        <X>1</X>
+        <Y>3</Y>
+      </Position>
+      <Connectors />
+      <Type>None</Type>
+      <Identifier>312c6267-9794-497b-9b2a-0150b8aec1ac</Identifier>
+    </Segment>
+    <Segment>
+      <Function>None</Function>
+      <OverrideFunction>false</OverrideFunction>
+      <Variables />
+      <Values />
+      <Position>
+        <X>2</X>
+        <Y>3</Y>
+      </Position>
+      <Connectors />
+      <Type>None</Type>
+      <Identifier>1ca34b98-426d-4dec-9a98-623f556352e8</Identifier>
+    </Segment>
+    <Segment>
+      <Function>None</Function>
+      <OverrideFunction>false</OverrideFunction>
+      <Variables />
+      <Values />
+      <Position>
+        <X>3</X>
+        <Y>3</Y>
+      </Position>
+      <Connectors />
+      <Type>None</Type>
+      <Identifier>dcec3d3c-0e3c-4975-a5ee-c06186dc50b3</Identifier>
+    </Segment>
+    <Segment>
+      <Function>None</Function>
+      <OverrideFunction>false</OverrideFunction>
+      <Variables />
+      <Values />
+      <Position>
+        <X>4</X>
+        <Y>3</Y>
+      </Position>
+      <Connectors />
+      <Type>None</Type>
+      <Identifier>47038786-0cba-4381-9798-88931f0761b1</Identifier>
+    </Segment>
+    <Segment>
+      <Function>None</Function>
+      <OverrideFunction>false</OverrideFunction>
+      <FunctionText>outNot(Y3);</FunctionText>
+      <Variables>
+        <Variable>
+          <Type>Default</Type>
+          <Value>Y3</Value>
+        </Variable>
+      </Variables>
+      <Values />
+      <Position>
+        <X>5</X>
+        <Y>3</Y>
+      </Position>
+      <Connectors>
+        <Connector>
+          <Alpha>1</Alpha>
+          <Foregraund>
+            <Red>1</Red>
+            <Green>0</Green>
+            <Blue>0</Blue>
+          </Foregraund>
+          <Weight>1</Weight>
+          <ZIndex>50</ZIndex>
+          <Marker>ConLeft</Marker>
+          <Center>
+            <X>0</X>
+            <Y>0.5</Y>
+          </Center>
+          <Radius>0.03</Radius>
+          <GeometryRadius>2.19</GeometryRadius>
+          <ConnectedTo>
+            <string>10feb5ea-a5af-42db-af20-ec819d0bda8b</string>
+          </ConnectedTo>
+        </Connector>
+        <Connector>
+          <Alpha>1</Alpha>
+          <Foregraund>
+            <Red>1</Red>
+            <Green>0</Green>
+            <Blue>0</Blue>
+          </Foregraund>
+          <Weight>1</Weight>
+          <ZIndex>50</ZIndex>
+          <Marker>ConRight</Marker>
+          <Center>
+            <X>1</X>
+            <Y>0.5</Y>
+          </Center>
+          <Radius>0.03</Radius>
+          <GeometryRadius>2.19</GeometryRadius>
+          <ConnectedTo>
+            <string>Minus</string>
+          </ConnectedTo>
+        </Connector>
+      </Connectors>
+      <Type>NotCoil</Type>
+      <Identifier>6055cb97-21ba-4842-87ef-37fb7659aa7d</Identifier>
+    </Segment>
+    <Segment>
+      <Function>None</Function>
+      <OverrideFunction>false</OverrideFunction>
+      <Variables />
+      <Values />
+      <Position>
+        <X>0</X>
+        <Y>4</Y>
+      </Position>
+      <Connectors />
+      <Type>None</Type>
+      <Identifier>703daccc-ea8a-46ce-81bd-bed309974806</Identifier>
+    </Segment>
+    <Segment>
+      <Function>None</Function>
+      <OverrideFunction>false</OverrideFunction>
+      <Variables />
+      <Values />
+      <Position>
+        <X>1</X>
+        <Y>4</Y>
+      </Position>
+      <Connectors />
+      <Type>None</Type>
+      <Identifier>3e8cc0e3-4ae9-44dc-adaf-d1c7043db460</Identifier>
+    </Segment>
+    <Segment>
+      <Function>None</Function>
+      <OverrideFunction>false</OverrideFunction>
+      <Variables />
+      <Values />
+      <Position>
+        <X>2</X>
+        <Y>4</Y>
+      </Position>
+      <Connectors />
+      <Type>None</Type>
+      <Identifier>ec66e4f4-669e-4671-8a42-3afc70cb5ba0</Identifier>
+    </Segment>
+    <Segment>
+      <Function>None</Function>
+      <OverrideFunction>false</OverrideFunction>
+      <Variables />
+      <Values />
+      <Position>
+        <X>3</X>
+        <Y>4</Y>
+      </Position>
+      <Connectors />
+      <Type>None</Type>
+      <Identifier>e35137cc-7b08-42bd-b58b-6132882aae0d</Identifier>
+    </Segment>
+    <Segment>
+      <Function>None</Function>
+      <OverrideFunction>false</OverrideFunction>
+      <Variables />
+      <Values />
+      <Position>
+        <X>4</X>
+        <Y>4</Y>
+      </Position>
+      <Connectors />
+      <Type>None</Type>
+      <Identifier>3cf93753-f929-43e6-9bbc-858a77236b68</Identifier>
+    </Segment>
+    <Segment>
+      <Function>None</Function>
+      <OverrideFunction>false</OverrideFunction>
+      <Variables />
+      <Values />
+      <Position>
+        <X>5</X>
+        <Y>4</Y>
+      </Position>
+      <Connectors />
+      <Type>None</Type>
+      <Identifier>9b094502-c287-4476-9b36-fd820a2bc24e</Identifier>
+    </Segment>
+    <Segment>
+      <Function>None</Function>
+      <OverrideFunction>false</OverrideFunction>
+      <Variables />
+      <Values />
+      <Position>
+        <X>0</X>
+        <Y>5</Y>
+      </Position>
+      <Connectors />
+      <Type>None</Type>
+      <Identifier>c310c00f-f0b5-4960-876c-a1c6e759a480</Identifier>
+    </Segment>
+    <Segment>
+      <Function>None</Function>
+      <OverrideFunction>false</OverrideFunction>
+      <Variables />
+      <Values />
+      <Position>
+        <X>1</X>
+        <Y>5</Y>
+      </Position>
+      <Connectors />
+      <Type>None</Type>
+      <Identifier>c1e7a026-2ad6-4c18-bee1-22d4f380fd32</Identifier>
+    </Segment>
+    <Segment>
+      <Function>None</Function>
+      <OverrideFunction>false</OverrideFunction>
+      <Variables />
+      <Values />
+      <Position>
+        <X>2</X>
+        <Y>5</Y>
+      </Position>
+      <Connectors />
+      <Type>None</Type>
+      <Identifier>6672c9d1-e0df-404a-9040-5973917c4040</Identifier>
+    </Segment>
+    <Segment>
+      <Function>None</Function>
+      <OverrideFunction>false</OverrideFunction>
+      <Variables />
+      <Values />
+      <Position>
+        <X>3</X>
+        <Y>5</Y>
+      </Position>
+      <Connectors />
+      <Type>None</Type>
+      <Identifier>43ec5363-baea-410a-9d0b-409a30c7a620</Identifier>
+    </Segment>
+    <Segment>
+      <Function>None</Function>
+      <OverrideFunction>false</OverrideFunction>
+      <Variables />
+      <Values />
+      <Position>
+        <X>4</X>
+        <Y>5</Y>
+      </Position>
+      <Connectors />
+      <Type>None</Type>
+      <Identifier>c0a4d632-287a-43af-a97d-a185e651882f</Identifier>
+    </Segment>
+    <Segment>
+      <Function>None</Function>
+      <OverrideFunction>false</OverrideFunction>
+      <Variables />
+      <Values />
+      <Position>
+        <X>5</X>
+        <Y>5</Y>
+      </Position>
+      <Connectors />
+      <Type>None</Type>
+      <Identifier>81bef0a9-7381-445a-9838-1cce1865169e</Identifier>
+    </Segment>
+    <Segment>
+      <Function>None</Function>
+      <OverrideFunction>false</OverrideFunction>
+      <Variables />
+      <Values />
+      <Position>
+        <X>0</X>
+        <Y>6</Y>
+      </Position>
+      <Connectors />
+      <Type>None</Type>
+      <Identifier>d8f70211-c62e-48ae-9cc1-b90fb9cbac34</Identifier>
+    </Segment>
+    <Segment>
+      <Function>None</Function>
+      <OverrideFunction>false</OverrideFunction>
+      <Variables />
+      <Values />
+      <Position>
+        <X>1</X>
+        <Y>6</Y>
+      </Position>
+      <Connectors />
+      <Type>None</Type>
+      <Identifier>526322b9-adbb-4deb-84ca-b506b9cdd948</Identifier>
+    </Segment>
+    <Segment>
+      <Function>None</Function>
+      <OverrideFunction>false</OverrideFunction>
+      <Variables />
+      <Values />
+      <Position>
+        <X>2</X>
+        <Y>6</Y>
+      </Position>
+      <Connectors />
+      <Type>None</Type>
+      <Identifier>54ade138-bcd7-4877-ae54-d1dcf37f5589</Identifier>
+    </Segment>
+    <Segment>
+      <Function>None</Function>
+      <OverrideFunction>false</OverrideFunction>
+      <Variables />
+      <Values />
+      <Position>
+        <X>3</X>
+        <Y>6</Y>
+      </Position>
+      <Connectors />
+      <Type>None</Type>
+      <Identifier>e5be008d-855b-45ea-bedf-fbda4eea36d5</Identifier>
+    </Segment>
+    <Segment>
+      <Function>None</Function>
+      <OverrideFunction>false</OverrideFunction>
+      <Variables />
+      <Values />
+      <Position>
+        <X>4</X>
+        <Y>6</Y>
+      </Position>
+      <Connectors />
+      <Type>None</Type>
+      <Identifier>a0b614af-b134-490a-bd5f-2913ab510593</Identifier>
+    </Segment>
+    <Segment>
+      <Function>None</Function>
+      <OverrideFunction>false</OverrideFunction>
+      <Variables />
+      <Values />
+      <Position>
+        <X>5</X>
+        <Y>6</Y>
+      </Position>
+      <Connectors />
+      <Type>None</Type>
+      <Identifier>e234f193-e87e-4300-8b88-ea34b0017235</Identifier>
+    </Segment>
+    <Segment>
+      <Function>None</Function>
+      <OverrideFunction>false</OverrideFunction>
+      <Variables />
+      <Values />
+      <Position>
+        <X>0</X>
+        <Y>7</Y>
+      </Position>
+      <Connectors />
+      <Type>None</Type>
+      <Identifier>4e45f6e6-8d53-4afb-bb10-55934ecff6a7</Identifier>
+    </Segment>
+    <Segment>
+      <Function>None</Function>
+      <OverrideFunction>false</OverrideFunction>
+      <Variables />
+      <Values />
+      <Position>
+        <X>1</X>
+        <Y>7</Y>
+      </Position>
+      <Connectors />
+      <Type>None</Type>
+      <Identifier>f9cb61f8-d474-4f25-ac17-97630d34070c</Identifier>
+    </Segment>
+    <Segment>
+      <Function>None</Function>
+      <OverrideFunction>false</OverrideFunction>
+      <Variables />
+      <Values />
+      <Position>
+        <X>2</X>
+        <Y>7</Y>
+      </Position>
+      <Connectors />
+      <Type>None</Type>
+      <Identifier>b79e2a8c-c86b-4710-af55-6c6c79406ce4</Identifier>
+    </Segment>
+    <Segment>
+      <Function>None</Function>
+      <OverrideFunction>false</OverrideFunction>
+      <Variables />
+      <Values />
+      <Position>
+        <X>3</X>
+        <Y>7</Y>
+      </Position>
+      <Connectors />
+      <Type>None</Type>
+      <Identifier>e530dd8e-5416-4b25-8a77-a671a59dac0d</Identifier>
+    </Segment>
+    <Segment>
+      <Function>None</Function>
+      <OverrideFunction>false</OverrideFunction>
+      <Variables />
+      <Values />
+      <Position>
+        <X>4</X>
+        <Y>7</Y>
+      </Position>
+      <Connectors />
+      <Type>None</Type>
+      <Identifier>9769195d-37dc-456a-9ca8-123bdaabfc04</Identifier>
+    </Segment>
+    <Segment>
+      <Function>None</Function>
+      <OverrideFunction>false</OverrideFunction>
+      <Variables />
+      <Values />
+      <Position>
+        <X>5</X>
+        <Y>7</Y>
+      </Position>
+      <Connectors />
+      <Type>None</Type>
+      <Identifier>ed31fe05-ed15-44d7-a202-f73c48989e71</Identifier>
+    </Segment>
+    <Segment>
+      <Function>None</Function>
+      <OverrideFunction>false</OverrideFunction>
+      <Variables />
+      <Values />
+      <Position>
+        <X>0</X>
+        <Y>8</Y>
+      </Position>
+      <Connectors />
+      <Type>None</Type>
+      <Identifier>2658b7ad-4d9f-45e6-b43c-1543de947417</Identifier>
+    </Segment>
+    <Segment>
+      <Function>None</Function>
+      <OverrideFunction>false</OverrideFunction>
+      <Variables />
+      <Values />
+      <Position>
+        <X>1</X>
+        <Y>8</Y>
+      </Position>
+      <Connectors />
+      <Type>None</Type>
+      <Identifier>d0d66b15-18ea-4dfc-8949-11619163eede</Identifier>
+    </Segment>
+    <Segment>
+      <Function>None</Function>
+      <OverrideFunction>false</OverrideFunction>
+      <Variables />
+      <Values />
+      <Position>
+        <X>2</X>
+        <Y>8</Y>
+      </Position>
+      <Connectors />
+      <Type>None</Type>
+      <Identifier>3efa379f-8e75-4840-8b54-7a3f46c5adaa</Identifier>
+    </Segment>
+    <Segment>
+      <Function>None</Function>
+      <OverrideFunction>false</OverrideFunction>
+      <Variables />
+      <Values />
+      <Position>
+        <X>3</X>
+        <Y>8</Y>
+      </Position>
+      <Connectors />
+      <Type>None</Type>
+      <Identifier>7ca72d5f-2ac9-46b1-9644-72e20391f724</Identifier>
+    </Segment>
+    <Segment>
+      <Function>None</Function>
+      <OverrideFunction>false</OverrideFunction>
+      <Variables />
+      <Values />
+      <Position>
+        <X>4</X>
+        <Y>8</Y>
+      </Position>
+      <Connectors />
+      <Type>None</Type>
+      <Identifier>628f7b00-1d6c-4246-91f9-6d27d29a0576</Identifier>
+    </Segment>
+    <Segment>
+      <Function>None</Function>
+      <OverrideFunction>false</OverrideFunction>
+      <Variables />
+      <Values />
+      <Position>
+        <X>5</X>
+        <Y>8</Y>
+      </Position>
+      <Connectors />
+      <Type>None</Type>
+      <Identifier>8efd9217-1e86-49af-8070-db57d91900fb</Identifier>
+    </Segment>
+    <Segment>
+      <Function>None</Function>
+      <OverrideFunction>false</OverrideFunction>
+      <Variables />
+      <Values />
+      <Position>
+        <X>0</X>
+        <Y>9</Y>
+      </Position>
+      <Connectors />
+      <Type>None</Type>
+      <Identifier>d223b71a-5149-4164-9be9-faf52305a0fe</Identifier>
+    </Segment>
+    <Segment>
+      <Function>None</Function>
+      <OverrideFunction>false</OverrideFunction>
+      <Variables />
+      <Values />
+      <Position>
+        <X>1</X>
+        <Y>9</Y>
+      </Position>
+      <Connectors />
+      <Type>None</Type>
+      <Identifier>b6405412-8a0c-4760-abb8-2055e292cef0</Identifier>
+    </Segment>
+    <Segment>
+      <Function>None</Function>
+      <OverrideFunction>false</OverrideFunction>
+      <Variables />
+      <Values />
+      <Position>
+        <X>2</X>
+        <Y>9</Y>
+      </Position>
+      <Connectors />
+      <Type>None</Type>
+      <Identifier>c0c43183-a1b2-49e3-887f-e4f5cc22dbee</Identifier>
+    </Segment>
+    <Segment>
+      <Function>None</Function>
+      <OverrideFunction>false</OverrideFunction>
+      <Variables />
+      <Values />
+      <Position>
+        <X>3</X>
+        <Y>9</Y>
+      </Position>
+      <Connectors />
+      <Type>None</Type>
+      <Identifier>1812fe47-7570-4915-bba2-a8fd49399bfd</Identifier>
+    </Segment>
+    <Segment>
+      <Function>None</Function>
+      <OverrideFunction>false</OverrideFunction>
+      <Variables />
+      <Values />
+      <Position>
+        <X>4</X>
+        <Y>9</Y>
+      </Position>
+      <Connectors />
+      <Type>None</Type>
+      <Identifier>d7954f7b-4489-4dbe-a9fc-34a5a8664095</Identifier>
+    </Segment>
+    <Segment>
+      <Function>None</Function>
+      <OverrideFunction>false</OverrideFunction>
+      <Variables />
+      <Values />
+      <Position>
+        <X>5</X>
+        <Y>9</Y>
+      </Position>
+      <Connectors />
+      <Type>None</Type>
+      <Identifier>3c9ab895-f9e4-45b8-b597-5e02f87774fc</Identifier>
+    </Segment>
+  </Segments>
+  <PowerLines>
+    <Line>
+      <Input>
+        <X>0</X>
+        <Y>0</Y>
+      </Input>
+      <Output>
+        <X>5</X>
+        <Y>0</Y>
+      </Output>
+      <InputMarker>ConRight</InputMarker>
+      <OutputMarker>ConLeft</OutputMarker>
+    </Line>
+    <Line>
+      <Input>
+        <X>0</X>
+        <Y>1</Y>
+      </Input>
+      <Output>
+        <X>5</X>
+        <Y>1</Y>
+      </Output>
+      <InputMarker>ConRight</InputMarker>
+      <OutputMarker>ConLeft</OutputMarker>
+    </Line>
+    <Line>
+      <Input>
+        <X>0</X>
+        <Y>2</Y>
+      </Input>
+      <Output>
+        <X>5</X>
+        <Y>2</Y>
+      </Output>
+      <InputMarker>ConRight</InputMarker>
+      <OutputMarker>ConLeft</OutputMarker>
+    </Line>
+    <Line>
+      <Input>
+        <X>0</X>
+        <Y>3</Y>
+      </Input>
+      <Output>
+        <X>5</X>
+        <Y>3</Y>
+      </Output>
+      <InputMarker>ConRight</InputMarker>
+      <OutputMarker>ConLeft</OutputMarker>
+    </Line>
+  </PowerLines>
+  <Width>5</Width>
+  <Height>9</Height>
+</PrimitivesSurface>

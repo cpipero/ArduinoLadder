@@ -25,7 +25,9 @@ namespace LadderLogic.Controller.State
 			//deny add coil not to last column.
 			if (prevSegment != null &&
 			   (prevSegment.Type == ElementType.Coil || 
-					prevSegment.Type == ElementType.NotCoil) &&
+					prevSegment.Type == ElementType.NotCoil || 
+					prevSegment.Type == ElementType.SetCoil || 
+					prevSegment.Type == ElementType.ResetCoil) &&
 			   newSegment != null &&
 				newSegment.Position.X < (newSegment.Surface.Width )) {
 				return true;
@@ -35,7 +37,8 @@ namespace LadderLogic.Controller.State
 
 				if (prevSegment.Type == ElementType.OffTimer ||
 				   prevSegment.Type == ElementType.OnTimer ||
-				   prevSegment.Type == ElementType.PulseTimer) {
+				   prevSegment.Type == ElementType.PulseTimer ||
+				   prevSegment.Type == ElementType.CycleTimer) {
 					if (newSegment != null && (newSegment.Position.X == newSegment.Surface.Width)) {
 						return true;
 					}

@@ -140,6 +140,9 @@ namespace LadderLogic.Controller
 					case ElementType.OffTimer:
 					case ElementType.OnTimer:
 					case ElementType.PulseTimer:
+					case ElementType.CycleTimer:
+					case ElementType.SetCoil:
+					case ElementType.ResetCoil:
 						CurrentState = new ElementState ();
 						break;
 					case ElementType.Line:
@@ -237,7 +240,9 @@ namespace LadderLogic.Controller
 				"NotCoil.xml", 
 				"OnTimer.xml", 
 				"OffTimer.xml", 
-				"PulseTimer.xml", 
+				"CycleTimer.xml",
+				"SetCoil.xml",
+				"ResetCoil.xml",
 				"Line.xml", 
 				"Properties.xml",
 				"Cursor.xml",

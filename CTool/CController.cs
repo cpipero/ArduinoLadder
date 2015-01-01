@@ -37,7 +37,10 @@ namespace LadderLogic.CTool
 				new NotCoilRule(),
 				new OffTimerRule(),
 				new OnTimerRule(),
-				new PulseTimerRule()
+				new CycleTimerRule(),
+				new PulseTimerRule(),
+				new SetCoilRule(),
+				new ResetCoilRule()
 			};
 
 			Cfg = AppController.Instance.Config;
@@ -88,6 +91,7 @@ namespace LadderLogic.CTool
 							func == FunctionType.InNot || 
 							func == FunctionType.TimerOff ||
 							func == FunctionType.TimerOn ||
+							func == FunctionType.TimerCycle ||
 							func == FunctionType.TimerPulse ||
 							func == FunctionType.Latch ||
 							func == FunctionType.LatchKey;
@@ -206,6 +210,7 @@ namespace LadderLogic.CTool
 									func == FunctionType.InNot ||
 									func == FunctionType.TimerOff ||
 									func == FunctionType.TimerOn ||
+									func == FunctionType.TimerCycle ||
 									func == FunctionType.TimerPulse ||
 									func == FunctionType.Latch ||
 									func == FunctionType.LatchKey;
@@ -225,7 +230,9 @@ namespace LadderLogic.CTool
 						}
 						if (queue.Any() &&
 						   current.Type == ElementType.Coil ||
-						   current.Type == ElementType.NotCoil) {
+						   current.Type == ElementType.NotCoil ||
+						   current.Type == ElementType.SetCoil ||
+						   current.Type == ElementType.ResetCoil) {
 							workflow.Append (Environment.NewLine);
 						}
 					}
