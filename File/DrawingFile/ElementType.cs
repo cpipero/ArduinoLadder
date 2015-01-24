@@ -32,7 +32,16 @@
 		OnTimer,
 
 
+		CycleTimer,
+
+
 		PulseTimer,
+
+
+		SetCoil,
+
+
+		ResetCoil,
 
 
 		Properties,

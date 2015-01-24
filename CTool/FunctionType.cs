@@ -44,6 +44,12 @@
 		OutServo,
 
 
+		Set,
+
+
+		Reset,
+
+
 		Latch,
 
 
@@ -56,7 +62,16 @@
 		TimerOff,
 
 
-		TimerPulse
+		TimerCycle,
+
+
+		TimerPulse,
+
+
+		CompareGT,
+
+
+		CompareLT
 	}
 }
 

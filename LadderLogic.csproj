@@ -125,7 +125,6 @@
     <Compile Include="CTool\FunctionRule\NotCoilRule.cs" />
     <Compile Include="CTool\FunctionRule\OffTimerRule.cs" />
     <Compile Include="CTool\FunctionRule\OnTimerRule.cs" />
-    <Compile Include="CTool\FunctionRule\PulseTimerRule.cs" />
     <Compile Include="CTool\FunctionRule\FunctionRule.cs" />
     <Compile Include="CTool\FunctionRule\NoContactRule.cs" />
     <Compile Include="CTool\FunctionType.cs" />
@@ -138,6 +137,10 @@
     <Compile Include="Presentation\EnvironmentVariablesDialog.cs" />
     <Compile Include="Controller\VariableExtensions.cs" />
     <Compile Include="File\DrawingFile\ElementFunction.cs" />
+    <Compile Include="CTool\FunctionRule\CycleTimerRule.cs" />
+    <Compile Include="CTool\FunctionRule\PulseTimerRule.cs" />
+    <Compile Include="CTool\FunctionRule\SetCoilRule.cs" />
+    <Compile Include="CTool\FunctionRule\ResetCoilRule.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup />
@@ -156,9 +159,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="Element\OffTimer.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Element\PulseTimer.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="Element\Line.xml">
@@ -196,6 +196,18 @@
     <None Include="Libs\Mono.TextEditor.xml" />
     <None Include="Documents\Tasks.txt" />
     <None Include="Buttons\CreateCode.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Element\CycleTimer.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Element\PulseTimer.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Element\SetCoil.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Element\ResetCoil.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>

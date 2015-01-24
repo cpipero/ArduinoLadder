@@ -23,7 +23,9 @@ namespace LadderLogic.Controller.State
 				Element.Selected = true;
 
 				if (Element.Type == ElementType.Coil ||
-				   Element.Type == ElementType.NotCoil) {
+				   Element.Type == ElementType.NotCoil ||
+				   Element.Type == ElementType.SetCoil ||
+				   Element.Type == ElementType.ResetCoil) {
 					MainClass._main.BindDefaultOutputs ();
 				}
 				else{

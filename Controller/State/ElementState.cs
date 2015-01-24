@@ -18,7 +18,9 @@ namespace LadderLogic.Controller.State
 			if (newSegment != null && !newSegment.IsPalette && newSegment.Type != ElementType.None) {
 
 				if (newSegment.Type == ElementType.Coil ||
-				    newSegment.Type == ElementType.NotCoil) {
+					newSegment.Type == ElementType.NotCoil || 
+					newSegment.Type == ElementType.SetCoil ||
+					newSegment.Type == ElementType.ResetCoil) {
 					MainClass._main.BindDefaultOutputs ();
 				} else {
 					MainClass._main.BindDefaultInputs ();

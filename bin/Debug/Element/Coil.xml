@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DrawingElement xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Primitives>
+		<Drawable xsi:type="LineElement">
+			<!-- Left pin -->
+			<Alpha>1</Alpha>
+			<Foregraund>
+				<Red>0</Red>
+				<Green>0</Green>
+				<Blue>0</Blue>
+			</Foregraund>
+			<Weight>1</Weight>
+			<ZIndex>100</ZIndex>
+			<Start>
+				<X>0</X>
+				<Y>0.5</Y>
+			</Start>
+			<End>
+				<X>0.3</X>
+				<Y>0.5</Y>
+			</End>
+		</Drawable>
+		<Drawable xsi:type="LineElement">
+			<!-- Right pin -->
+			<Alpha>1</Alpha>
+			<Foregraund>
+				<Red>0</Red>
+				<Green>0</Green>
+				<Blue>0</Blue>
+			</Foregraund>
+			<Weight>1</Weight>
+			<ZIndex>100</ZIndex>
+			<Start>
+				<X>1</X>
+				<Y>0.5</Y>
+			</Start>
+			<End>
+				<X>0.7</X>
+				<Y>0.5</Y>
+			</End>
+		</Drawable>
+		<Drawable xsi:type="Arc3PointsElement">
+			<!-- Left arc -->
+			<Alpha>1</Alpha>
+			<Foregraund>
+				<Red>0</Red>
+				<Green>0</Green>
+				<Blue>0</Blue>
+			</Foregraund>
+			<Weight>1</Weight>
+			<ZIndex>100</ZIndex>
+			<Start>
+				<X>0.36</X>
+				<Y>0.25</Y>
+			</Start>
+			<Middle>
+				<X>0.3</X>
+				<Y>0.5</Y>
+			</Middle>
+			<End>
+				<X>0.36</X>
+				<Y>0.75</Y>
+			</End>
+		</Drawable>
+		<Drawable xsi:type="Arc3PointsElement">
+			<!-- Right arc -->
+			<Alpha>1</Alpha>
+			<Foregraund>
+				<Red>0</Red>
+				<Green>0</Green>
+				<Blue>0</Blue>
+			</Foregraund>
+			<Weight>1</Weight>
+			<ZIndex>100</ZIndex>
+			<Start>
+				<X>0.64</X>
+				<Y>0.25</Y>
+			</Start>
+			<Middle>
+				<X>0.7</X>
+				<Y>0.5</Y>
+			</Middle>
+			<End>
+				<X>0.64</X>
+				<Y>0.75</Y>
+			</End>
+		</Drawable>
+		<Drawable xsi:type="TextElement">
+			<!-- Coil reference -->
+			<Alpha>1</Alpha>
+			<Foregraund>
+				<Red>0.5</Red>
+				<Green>0.5</Green>
+				<Blue>0.5</Blue>
+			</Foregraund>
+			<Weight>1</Weight>
+			<ZIndex>200</ZIndex>
+			<Text>{0}</Text>
+			<Align>center</Align>
+			<VAlign>center</VAlign>
+			<Start>
+				<X>0.5</X>
+				<Y>0.125</Y>
+			</Start>
+			<FontFamily>Georgia</FontFamily>
+			<FontSize>20</FontSize>
+			<ScaledFontSize>0</ScaledFontSize>
+			<Marker>Index</Marker>
+		</Drawable>
+		<Drawable xsi:type="TextElement">
+			<!-- Coil alias -->
+			<Alpha>1</Alpha>
+			<Foregraund>
+				<Red>0</Red>
+				<Green>0.5</Green>
+				<Blue>0</Blue>
+			</Foregraund>
+			<Weight>1</Weight>
+			<ZIndex>200</ZIndex>
+			<Text>{Function}</Text>
+			<Align>left</Align>
+			<VAlign>center</VAlign>
+			<Start>
+				<X>0.1</X>
+				<Y>0.875</Y>
+			</Start>
+			<FontFamily>Georgia</FontFamily>
+			<FontSize>14</FontSize>
+			<ScaledFontSize>0</ScaledFontSize>
+			<Marker>Name</Marker>
+		</Drawable>
+		<Drawable xsi:type="Connector">
+	      <Alpha>1</Alpha>
+	      <Foregraund>
+	        <Red>1</Red>
+	        <Green>0</Green>
+	        <Blue>0</Blue>
+	      </Foregraund>
+	      <Weight>1</Weight>
+	      <ZIndex>50</ZIndex>
+	      <Marker>ConLeft</Marker>
+	      <Center>
+	        <X>0</X>
+	        <Y>0.5</Y>
+	      </Center>
+	      <Radius>0.03</Radius>
+    	</Drawable>
+		<Drawable xsi:type="Connector">
+	      <Alpha>1</Alpha>
+	      <Foregraund>
+	        <Red>1</Red>
+	        <Green>0</Green>
+	        <Blue>0</Blue>
+	      </Foregraund>
+	      <Weight>1</Weight>
+	      <ZIndex>50</ZIndex>
+	      <Marker>ConRight</Marker>
+	      <Center>
+	        <X>1</X>
+	        <Y>0.5</Y>
+	      </Center>
+	      <Radius>0.03</Radius>
+    	</Drawable>
+	</Primitives>
+	<Type>Coil</Type>
+	<Tooltip>Coil</Tooltip>
+	<Functions>
+		<ElementFunction>
+			<Function>Out</Function>
+			<Format>out({0});</Format>
+		</ElementFunction>
+		<ElementFunction>
+			<Function>OutPwm</Function>
+			<Format>outPWM({0});</Format>
+		</ElementFunction>
+		<ElementFunction>
+			<Function>OutServo</Function>
+			<Format>outServo({0});</Format>
+		</ElementFunction>
+	</Functions>
+	<Order>3</Order>
+</DrawingElement>
