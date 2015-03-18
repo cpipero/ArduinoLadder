@@ -1,17 +1,16 @@
-﻿using Gtk;
+﻿using System;
 using System.Configuration;
-using System;
-using System.IO;
 using GLib;
-using LadderLogic.Reader;
-using LadderLogic.Surface;
+using Gtk;
 
 namespace LadderLogic
 {
-	using Controller;
-	using Presentation;
+    using Controller;
+    using Presentation;
+    using Reader;
+    using Surface;
 
-	class MainClass
+    class MainClass
 	{
 		public static AppWindow _main;
 

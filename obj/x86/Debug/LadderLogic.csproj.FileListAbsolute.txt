@@ -299,3 +299,6 @@ C:\Users\walter\Documents\GitHub\ArduinoLadder\bin\Debug\LadderLogic.pdb
 C:\Users\walter\Documents\GitHub\ArduinoLadder\obj\x86\Debug\LadderLogic.csprojResolveAssemblyReference.cache
 C:\Users\walter\Documents\GitHub\ArduinoLadder\obj\x86\Debug\LadderLogic.exe
 C:\Users\walter\Documents\GitHub\ArduinoLadder\obj\x86\Debug\LadderLogic.pdb
+G:\Eugene\ArduinoLadder\bin\Debug\LadderLogic.exe.config
+G:\Eugene\ArduinoLadder\obj\x86\Debug\LadderLogic.exe
+G:\Eugene\ArduinoLadder\obj\x86\Debug\LadderLogic.pdb
