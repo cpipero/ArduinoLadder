@@ -1,7 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 14
+VisualStudioVersion = 14.0.22310.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LadderLogic", "LadderLogic.csproj", "{EC31E108-4964-4E61-823F-2077D48F1E15}"
+EndProject
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "ArduinoLadder.Setup", "ArduinoLadder.Setup\ArduinoLadder.Setup.wixproj", "{0DBD6B91-8D07-4D0D-BB92-9C88BA501AEF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,6 +17,13 @@ Global
 		{EC31E108-4964-4E61-823F-2077D48F1E15}.Debug|x86.Build.0 = Debug|x86
 		{EC31E108-4964-4E61-823F-2077D48F1E15}.Release|x86.ActiveCfg = Release|x86
 		{EC31E108-4964-4E61-823F-2077D48F1E15}.Release|x86.Build.0 = Release|x86
+		{0DBD6B91-8D07-4D0D-BB92-9C88BA501AEF}.Debug|x86.ActiveCfg = Debug|x86
+		{0DBD6B91-8D07-4D0D-BB92-9C88BA501AEF}.Debug|x86.Build.0 = Debug|x86
+		{0DBD6B91-8D07-4D0D-BB92-9C88BA501AEF}.Release|x86.ActiveCfg = Release|x86
+		{0DBD6B91-8D07-4D0D-BB92-9C88BA501AEF}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = LadderLogic.csproj

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Product Id="*" Name="Arduino Ladder" Language="1033" Version="1.0.0.0" Manufacturer="Beeond Inc." UpgradeCode="dd17e2e3-a29d-4f23-8814-301962ad6e52">
+		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+
+		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+		<MediaTemplate />
+
+		<Feature Id="ProductFeature" Title="ArduinoLadder.Setup" Level="1">
+			<ComponentRef Id="ProductComponent" />
+      <ComponentRef Id="Buttons" />
+      <ComponentRef Id="Compiller" />
+      <ComponentRef Id="CTool" />
+      <ComponentRef Id="Element" />
+      <ComponentRef Id="File_Config" />
+      
+    </Feature>
+	</Product>
+
+	<Fragment>
+		<Directory Id="TARGETDIR" Name="SourceDir">
+			<Directory Id="ProgramFilesFolder">
+				<Directory Id="INSTALLFOLDER" Name="ArduinoLadder" >
+          <Component Id="ProductComponent" Guid="4da54f3e-5eb0-4c0a-94d7-1ba50f7b1b30"> 
+				      <File Id="LadderLogic.exe_config" Source="..\bin\Debug\LadderLogic.exe.config"/>
+              <File Id="LadderLogic_exe" Source="..\bin\Debug\LadderLogic.exe"/>
+              <File Id="LadderLogic_pdb" Source="..\bin\Debug\LadderLogic.pdb"/>
+              <File Id="ladder_icon_png" Source="..\bin\Debug\ladder_icon.png"/>              
+			    </Component>
+          <Directory Id="Buttons" Name="Buttons">
+            <Component Id="Buttons" Guid="44a78c31-8034-4708-a18f-4f8a794f0f0a">
+              <File Id="CreateCode_xml" Source="..\bin\Debug\Buttons\CreateCode.xml"/>
+            </Component>
+          </Directory>
+          <Directory Id="Compiller" Name="Compiller">
+            <Component Id="Compiller" Guid="8fe134b7-f3c3-4600-8388-f5fd2cc7eabc">
+              <CreateFolder/>
+            </Component>
+          </Directory>
+          <Directory Id="CTool" Name="CTool">
+            <Component Id="CTool" Guid="6221cd20-a521-46ef-8cf7-c2013faccd11">
+              <File Id="CodeTemplate_c" Source="..\bin\Debug\CTool\CodeTemplate.c"/>
+            </Component>
+          </Directory>
+          <Directory Id="Element" Name="Element">
+            <Component Id="Element" Guid="b86f8b92-f81c-4cba-9100-4ea8e65c2df4">
+              <File Id="Latch_xml" Source="..\bin\Debug\Element\Latch.xml"/>
+              <File Id="CycleTimer_xml" Source="..\bin\Debug\Element\CycleTimer.xml"/>
+              <File Id="PulseTimer_xml" Source="..\bin\Debug\Element\PulseTimer.xml"/>
+              <File Id="OffTimer_xml" Source="..\bin\Debug\Element\OffTimer.xml"/>
+              <File Id="OnTimer_xml" Source="..\bin\Debug\Element\OnTimer.xml"/>
+              <File Id="NcContact_xml" Source="..\bin\Debug\Element\NcContact.xml"/>
+              <File Id="ResetCoil_xml" Source="..\bin\Debug\Element\ResetCoil.xml"/>
+              <File Id="SetCoil_xml" Source="..\bin\Debug\Element\SetCoil.xml"/>
+              <File Id="NoContact_xml" Source="..\bin\Debug\Element\NoContact.xml"/>
+              <File Id="NotCoil_xml" Source="..\bin\Debug\Element\NotCoil.xml"/>
+              <File Id="Coil_xml" Source="..\bin\Debug\Element\Coil.xml"/>
+              <File Id="Properties_xml" Source="..\bin\Debug\Element\Properties.xml"/>
+              <File Id="Cursor_xml" Source="..\bin\Debug\Element\Cursor.xml"/>
+              <File Id="Line_xml" Source="..\bin\Debug\Element\Line.xml"/>              
+            </Component>
+          </Directory>
+          <Directory Id="File" Name="File">
+            <Directory Id="Config" Name="Config">
+              <Component Id="File_Config" Guid="08d36b6a-bfd3-4fa0-bee3-13a415436d04">
+                <File Id="ladderlogic_conf_xml" Source="..\bin\Debug\File\Config\ladderlogic.conf.xml"/>
+              </Component>
+            </Directory>
+          </Directory>
+        </Directory>
+			</Directory>
+		</Directory>
+	</Fragment>
+
+</Wix>

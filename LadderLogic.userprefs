@@ -1,4 +1,4 @@
-﻿<Properties GitUserInfo="UsingGIT">
+﻿<Properties GitUserInfo="UsingGIT" StartupItem="LadderLogic.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
   <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

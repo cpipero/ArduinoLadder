@@ -143,7 +143,6 @@
     <Compile Include="CTool\FunctionRule\ResetCoilRule.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <ItemGroup />
   <ItemGroup>
     <None Include="Element\Coil.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -211,10 +210,5 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="CTool\" />
-    <Folder Include="CTool\FunctionRule\" />
-    <Folder Include="CTool\Arduino\" />
-    <Folder Include="Buttons\" />
-  </ItemGroup>
+  <ItemGroup />
 </Project>

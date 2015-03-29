@@ -1,0 +1,8 @@
+obj\Debug\Files.wixobj
+obj\Debug\Product.wixobj
+E:\eugene\ArduinoLadder\ArduinoLadder.Setup\bin\Debug\cab1.cab
+E:\eugene\ArduinoLadder\ArduinoLadder.Setup\bin\Debug\ArduinoLadder.Setup.msi
+E:\eugene\ArduinoLadder\ArduinoLadder.Setup\bin\Debug\ArduinoLadder.Setup.wixpdb
+obj\Debug\ArduinoLadder.Setup.wixproj.BindContentsFileListnull.txt
+obj\Debug\ArduinoLadder.Setup.wixproj.BindOutputsFileListnull.txt
+obj\Debug\ArduinoLadder.Setup.wixproj.BindBuiltOutputsFileListnull.txt
