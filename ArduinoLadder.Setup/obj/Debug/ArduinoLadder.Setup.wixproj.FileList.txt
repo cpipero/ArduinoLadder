@@ -6,3 +6,5 @@ E:\eugene\ArduinoLadder\ArduinoLadder.Setup\bin\Debug\ArduinoLadder.Setup.wixpdb
 obj\Debug\ArduinoLadder.Setup.wixproj.BindContentsFileListnull.txt
 obj\Debug\ArduinoLadder.Setup.wixproj.BindOutputsFileListnull.txt
 obj\Debug\ArduinoLadder.Setup.wixproj.BindBuiltOutputsFileListnull.txt
+G:\Eugene\ArduinoLadder\ArduinoLadder.Setup\bin\Debug\ArduinoLadder.Setup.msi
+G:\Eugene\ArduinoLadder\ArduinoLadder.Setup\bin\Debug\ArduinoLadder.Setup.wixpdb

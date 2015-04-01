@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
 	<Product Id="*" Name="Arduino Ladder" Language="1033" Version="1.0.0.0" Manufacturer="Beeond Inc." UpgradeCode="dd17e2e3-a29d-4f23-8814-301962ad6e52">
-		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine"  />
 
+		<Media Id="1" EmbedCab="yes" Cabinet="media1.cab"/>
 		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
-		<MediaTemplate />
-
+		
 		<Feature Id="ProductFeature" Title="ArduinoLadder.Setup" Level="1">
-			<ComponentRef Id="ProductComponent" />
-      <ComponentRef Id="Buttons" />
-      <ComponentRef Id="Compiller" />
-      <ComponentRef Id="CTool" />
-      <ComponentRef Id="Element" />
-      <ComponentRef Id="File_Config" />
+		 	  <ComponentRef Id="ProductComponent" />
+		      <ComponentRef Id="Buttons" />
+		      <ComponentRef Id="Compiller" />
+		      <ComponentRef Id="CTool" />
+		      <ComponentRef Id="Element" />
+		      <ComponentRef Id="File_Config" />
       
     </Feature>
 	</Product>

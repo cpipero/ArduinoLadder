@@ -1,3 +1,2 @@
-E:\eugene\ArduinoLadder\ArduinoLadder.Setup\bin\Debug\cab1.cab
-E:\eugene\ArduinoLadder\ArduinoLadder.Setup\bin\Debug\ArduinoLadder.Setup.msi
-E:\eugene\ArduinoLadder\ArduinoLadder.Setup\bin\Debug\ArduinoLadder.Setup.wixpdb
+G:\Eugene\ArduinoLadder\ArduinoLadder.Setup\bin\Debug\ArduinoLadder.Setup.msi
+G:\Eugene\ArduinoLadder\ArduinoLadder.Setup\bin\Debug\ArduinoLadder.Setup.wixpdb
