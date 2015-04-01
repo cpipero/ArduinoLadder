@@ -350,3 +350,6 @@ E:\eugene\ArduinoLadder\bin\Debug\Element\ResetCoil.xml
 E:\eugene\ArduinoLadder\bin\Debug\LadderLogic.exe
 E:\eugene\ArduinoLadder\bin\Debug\LadderLogic.pdb
 E:\eugene\ArduinoLadder\obj\x86\Debug\LadderLogic.csprojResolveAssemblyReference.cache
+G:\Disk_H\ArduinoLadder\bin\Debug\LadderLogic.exe.config
+G:\Disk_H\ArduinoLadder\obj\x86\Debug\LadderLogic.exe
+G:\Disk_H\ArduinoLadder\obj\x86\Debug\LadderLogic.pdb
