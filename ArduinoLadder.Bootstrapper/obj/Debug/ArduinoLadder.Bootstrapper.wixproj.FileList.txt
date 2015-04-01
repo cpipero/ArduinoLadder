@@ -4,3 +4,4 @@ G:\Eugene\ArduinoLadder\ArduinoLadder.Bootstrapper\bin\Debug\ArduinoLadder.wixpd
 obj\Debug\ArduinoLadder.Bootstrapper.wixproj.BindContentsFileList.txt
 obj\Debug\ArduinoLadder.Bootstrapper.wixproj.BindOutputsFileList.txt
 obj\Debug\ArduinoLadder.Bootstrapper.wixproj.BindBuiltOutputsFileList.txt
+G:\Eugene\ArduinoLadder\ArduinoLadder.Bootstrapper\bin\Debug\gtk-sharp-2.12.22.msi

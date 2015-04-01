@@ -25,6 +25,7 @@
   </ItemGroup>
   <ItemGroup>
     <WixExtension Include="C:\Program Files %28x86%29\WiX Toolset v3.9\bin\WixNetFxExtension.dll" />
+    <WixExtension Include="C:\Program Files %28x86%29\WiX Toolset v3.9\bin\WixUtilExtension.dll" />
     <WixExtension Include="WixBalExtension">
       <HintPath>$(WixExtDir)\WixBalExtension.dll</HintPath>
       <Name>WixBalExtension</Name>
