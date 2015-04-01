@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
-	<Bundle Name="ArduinoLadder.Bootstrapper" Version="1.0.0.0" Manufacturer="" UpgradeCode="626fd23a-2d9f-40c6-94f4-d8daab60a3ea">
+	<Bundle Name="Arduino Ladder" Version="1.0.0.0" Manufacturer="Beeond Inc." UpgradeCode="626fd23a-2d9f-40c6-94f4-d8daab60a3ea">
 		<BootstrapperApplicationRef Id="WixStandardBootstrapperApplication.RtfLicense" />
 
 		<Chain>
-			<!-- TODO: Define the list of chained packages. -->
-			<!-- <MsiPackage SourceFile="path\to\your.msi" /> -->
+			  <PackageGroupRef Id="NetFx40Redist"/>
+    		  <MsiPackage Id="MyApplication" SourceFile="..\ArduinoLadder.Setup\bin\Debug\ArduinoLadder.Setup.msi"/>
 		</Chain>
 	</Bundle>
 </Wix>

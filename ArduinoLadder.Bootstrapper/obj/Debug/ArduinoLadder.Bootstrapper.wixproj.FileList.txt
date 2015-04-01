@@ -1,0 +1,6 @@
+obj\Debug\Bundle.wixobj
+G:\Eugene\ArduinoLadder\ArduinoLadder.Bootstrapper\bin\Debug\ArduinoLadder.exe
+G:\Eugene\ArduinoLadder\ArduinoLadder.Bootstrapper\bin\Debug\ArduinoLadder.wixpdb
+obj\Debug\ArduinoLadder.Bootstrapper.wixproj.BindContentsFileList.txt
+obj\Debug\ArduinoLadder.Bootstrapper.wixproj.BindOutputsFileList.txt
+obj\Debug\ArduinoLadder.Bootstrapper.wixproj.BindBuiltOutputsFileList.txt
