@@ -1,0 +1,555 @@
+	/* @override http://arduino.cc/en/pub/skins/arduinoWide_SSO/arduinoWide_SSO.css 
+	
+	http://todo.arduino.cc/en/pub/skins/arduinoWide_SSO/arduinoWide_SSO.css
+	http://labs.arduino.cc/pub/skins/arduinoWide/arduinoWide.css
+	http://playground.todo.arduino.cc/en/pub/skins/arduinoWide_SSO/css/arduinoWide_SSO.css
+	http://blog.arduino.cc/wp-content/plugins/wordpress-popular-posts/style/wpp.css?ver=3.5.1
+	http://todo.arduino.cc/en/pub/skins/arduinoWide_SSO/css/arduinoWide_SSO.css
+	http://playground.arduino.cc/pub/skins/arduinoWide_SSO/css/arduinoWide_SSO.css
+	
+	*/
+	
+	/*
+	
+
+	
+	*/
+	
+	div#ssotoolbar {
+		display: none;
+	}
+	
+	
+	p.vspace, table p.vspace, td p.vspace {
+		display: none!important;
+		padding: 0!important;
+		margin: 0!important;
+	}
+
+	
+	#wikitext table {
+		font-size: 16px;
+		font-size: .8888rem;
+	}
+	
+	#wikitext table img{
+		margin: 20px 0;
+	}
+	
+	#wikitext table td > p{
+		margin-top: 0px!important;
+	}
+	
+
+	a.addthis_button_compact,a.addthis_button_print,a.addthis_button_email,a.addthis_button_favorites,a.addthis_button_facebook,a.addthis_button_twitter {border-bottom: 0 solid white;}
+	
+	input:focus {}
+	
+
+/*	#pageheader .title a:hover {color: #fff;border: none;background-color: transparent;}
+	#pagenav {clear: both;font-size: 0.8em;font-family: "Lucida Sans", Lucida, Verdana, sans-serif;color: #00979c;padding-bottom: 30px;margin: 0 20px 20px;height: 9px;}
+	#navbar {float: left; background: #00979c;height: 27px;}*/
+	
+/*	#navbar a {outline: none;background: #00979c;float: left;display: block;height: 25px;line-height: 25px;padding: 0 8px;color: #FFF;border-bottom: none;border: 1px solid #00868c;border-right: solid 1px #00757a;border-left: 1px solid #4dafb7;}
+	
+	#navbar a:hover {background: #3fadb5;border-right: solid 1px #00757a;border-left: 1px solid #4dafb7;}
+	
+	#navbar a:active {line-height: 27px;background: #e34c00;border: 1px solid #dfa70a;border-left: 1px solid #3cbaa9;border-right: 1px solid #d09b09;}
+	
+	#navbar a.selflink {line-height: 27px;background: #00757a;border: solid 1px #00757a;border-left: solid 1px #00757a;border-right: 1px solid #4dafb7;}
+	
+	#navbar_external {float: right;height: 27px;}
+	
+	#navbar_external a {border: 1px solid #00868c;outline: none;padding: 0 5px;display: inline-block;color: #FFF;height: 25px;line-height: 25px;border-right: solid 1px #00757a;border-left: 1px solid #4dafb7;}
+	
+	#navbar_external a:hover {padding: 0 5px;display: inline-block;border: 0;color: #FFF;height: 25px;line-height: 25px;background: #3fadb5;border-right: solid 1px #00757a;border-left: 1px solid #4dafb7;}
+	
+	#navbar_external a:active {height: 25px;line-height: 25px;background: #e34c00;border: 1px solid #dfa70a;border-left: 1px solid #3cbaa9;border-right: 1px solid #d09b09;}*/
+	
+	
+div#twitter_update_list {
+    background: transparent;
+    float: left;
+    width: 100%;
+    margin-bottom: 1.6em;
+    color: #FFF;
+}
+
+div#twitter_update_list span {
+    color: #555;
+    display: block;
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+    padding-bottom: .5em;
+    border-bottom: solid #ebebeb 1px;
+}
+
+div#twitter_update_list>a {
+    color: #e34c00;
+}
+
+div#blog_update_list {
+    background: transparent;
+    float: left;
+    width: 100%;
+    margin-bottom: 1.6em;
+    color: #FFF;
+}
+
+div#blog_update_list span {
+    color: #555;
+    display: block;
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+    padding-bottom: .5em;
+    border-bottom: solid #ebebeb 1px;
+}
+
+div#blog_update_list>a {
+    color: #e34c00;
+}
+
+.code {
+    color: #999 !important;
+    height: auto !important;
+    font: 100% Monaco, "Courier New", Courier, mono;
+}
+
+/* HOME */
+.big {
+    font-family: "Lucida Sans", Lucida, Verdana, sans-serif;
+    line-height: 1.6em;
+    color: #00979c;
+}
+
+/* DOWNLOAD */
+.download_container ul {
+    padding: 0;
+    list-style-position: inside;
+}
+
+.download_container ul li {
+    list-style-image: url(http://arduino.cc/en/pub/skins/arduinoWide_SSO/css/img/arrow.gif);
+}
+
+.download_container ul li:hover {
+    list-style-image: url(http://arduino.cc/en/pub/skins/arduinoWide_SSO/css/img/arrow_blue.gif);
+}
+
+/* FAQ */
+.question {
+    width: 20%;
+    float: left;
+    clear: both;
+    margin-bottom: 20px;
+    color: #00979c;
+}
+
+.answer {
+    float: left;
+    width: 78%;
+    margin-left: 2%;
+    margin-bottom: 30px;
+}
+
+.productgrid a {
+    text-decoration: none;
+    border: 0;
+}
+	
+	
+	
+/*	td h3 {
+		margin-top: 0px;
+	}*/
+	
+	h3 + p, h3 + pre, h3 + ul{
+		margin-top: 10px;	
+	}
+	
+	h4 {
+		font-size: 18px;
+		font-size: 1rem;
+		line-height: 24px;
+		line-height: 1.33333rem;
+		margin: 1.2777em 0 .6em;
+	}
+	
+	h5{
+		font-weight: normal;
+		line-height: 1.4em;
+		color: #6f6f6f;
+	}
+	
+	pre  {
+		font-family: "TyponineSans Monospace Regular 4", "TyponineSans Monospace Light 5";
+		font-style: normal;
+		font-weight: normal;
+		font-stretch: normal;
+		font-size: 13px;
+		font-size: .72rem;
+		line-height: 17px;
+		line-height: .9rem;
+		}
+	
+	p {
+		margin-top: 0;
+		margin-bottom: 1.5em;
+	}
+	
+	p.subheader{
+		font-size: 21px;
+		font-size: 1.166666667rem;
+		line-height: 1.6em;
+		padding: 10px 0;
+	}
+	
+	p + p.subheader{
+		padding: 0;
+		margin-top: -10px;
+		padding-bottom: 20px;
+	}
+	
+	#wikitext table tbody tr td p {
+		margin-top: 20px;
+		margin-bottom: 5px;
+	}
+	G
+	#wikitext ul:not(.orbit-slides-container) li{
+		text-indent:-20px; 
+		font-size: 14px;
+		font-size: 0.8rem;
+		line-height: 1.2rem;
+		letter-spacing: 0.1rem;
+		margin-bottom: 0.3rem;
+	}
+	
+/*	#wikitext ul li em {
+		font-size: 0.9rem;
+	}*/
+	
+	.warranty, .warning {
+		font-family: "TyponineSans Monospace Regular 4", "TyponineSans Monospace Light 5";
+		font-style: normal;
+		font-weight: normal;
+		font-stretch: normal;
+		color: #00979c;
+		font-size: 14px;
+		font-size: .777778rem;
+		padding: 20px;
+		background-color: #edefef ;
+		margin: 20px 0;
+		text-transform: uppercase;
+		}
+	
+	.warranty{
+		padding: 20px 220px 20px 20px;
+		background: #edefef url(../img/heart.png) no-repeat right center;
+	}
+		
+	div#wikitext {
+		position: relative;
+	}
+	
+	div#wikitext table{
+		border: none;
+	}
+	
+	div#wikitext table td{
+		padding-right: 20px;
+	}
+	
+	div#wikitext table td{
+		padding-left: 20px;
+	}
+	
+	div#wikitext table td:first-child{
+		padding-left: 0px;
+	}
+	
+	div#wikitext table td:last-child{
+		padding-right: 0px;
+	}
+	
+	div#wikitext table td.panel:last-child{
+		padding: 1.25em;
+	}
+	
+	div#wikitext table td.panel li{
+		font-size: 14px;
+		font-size: .7222rem;
+		line-height: 18px;
+	}
+	
+	div.toc {
+		margin-top: 20px;
+/*		margin-right: 20px;*/
+		margin-bottom: 20px!important;
+		padding: 20px !important;
+		border: 1px solid #e8e8e8;
+		background: #fafafa; 
+	}
+	
+	
+	div.toc p{
+		display: none;
+		
+	}
+		
+.borderColumn td{
+	padding-right: 15px;
+	padding-left: 15px;
+	border-right: 1px solid #e6e6e6;
+
+}
+
+.borderColumn td:first-child{
+	padding-left: 0px;	
+}
+
+.borderColumn td:last-child{
+	padding-right: 0px;
+	border: none;
+}
+
+/*#wikitext .borderColumn ul li{
+	font-size: 13px;
+	font-size: .7222rem;
+}*/
+
+#wikitext table.productgrid tbody tr td p strong {
+	font-family: "TyponineSans Monospace Regular 4", "TyponineSans Monospace Light 5";
+}
+
+table.alternateTab{
+	border-collapse:collapse;
+	border: 1px solid #ccc!important;
+
+}
+
+.alternateTab td{
+	padding: 8px!important;
+
+}
+
+
+.alternateTab tr:nth-child(odd) td:nth-child(even) {
+	background: #F7F6F6;}
+
+.alternateTab tr:nth-child(odd) td:nth-child(odd) {
+	background: #E9F5F5;
+}
+
+h3 span.small{
+	margin-top: -10px;
+}
+
+h3 span.small, h3 span.small a{
+	font-size: .8rem;
+	
+}
+
+
+/*		PLAYGROUND		*/
+
+#pagetext.playground{
+	float: left;
+	width: 700px;
+}
+
+.playground
+	#actions {
+		font-size: .8em;
+		padding-bottom: 15px;
+		margin-bottom: 30px;
+		text-align: right;
+		border-bottom: 1px solid #ccc;
+	}
+
+.playground	
+	#actions a {
+		padding:0 10px;
+	}
+
+.playground	
+	#actions a:hover{
+		text-decoration: underline;
+	}
+
+.playground	
+	#actions a + a{
+		border-left: 1px solid;
+	}
+
+#pagenav{
+	float: left;
+	width: 190px;
+	font-size: 14px;
+	font-size: .777777778rem;
+	margin-right: 30px;
+	}
+	
+.playground h1, .playground h2{
+	font-size: 34px;
+	font-size: 1.888888889rem;
+} 
+
+
+#pagenav p{
+	margin-bottom: 0;
+}
+
+#pagenav ul > li{
+	font-size: 12px;
+}
+
+#pagenav ul{
+	padding: 0;
+	list-style-position: inside;
+	padding-left: 15px;
+	padding-bottom: 5px;
+	}
+/*#pagenav p{
+	padding-bottom: 10px;
+	margin-top: 0;
+	border-bottom: dotted 1px #999;
+	}*/
+/*#pagenav p:first-child{
+	font-family: "Lucida Sans", Lucida, Verdana, sans-serif;
+	line-height: 1.6em;
+	color: #00979c;
+	width: 260px;
+	border-bottom: 0;
+	}*/
+#pagenav p:first-child a{
+	color: #00979c;
+	}
+#pagenav p:first-child em{
+	font-style: normal;
+	display: none;
+	}
+#pagenav p.sidehead{
+	border: 0;
+	padding-bottom: 0;
+	margin-bottom: 3px;
+	}
+#pageactions{
+	margin-left: 261px;
+	padding-bottom: 10px;
+	color: #555;
+	background-color: #fff;
+	font-size: .8em;
+	text-align: right;
+	}
+#pageactions ul{
+	list-style: none;
+	margin: 0;
+	padding: 2px;
+	}
+#pageactions li{
+	display: inline;
+	margin: 0;
+	padding: 2px;
+	}
+#pageactions a{
+	margin-right: 10px;
+	}
+
+.orbit-timer {
+	display: none;
+}
+.slider-container {
+	position: relative;
+	height: 397px;
+	background-color: #E9F5F5;
+	
+}
+.slider-container .fixed-caption {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: 10;
+	color: white;
+	padding: 20px;
+	width: 50%;
+	line-height: 1.66em;
+	font-size: 0.8222em;
+	
+	text-align: right;
+	font-family: "TyponineSans Monospace Regular 4", "TyponineSans Monospace Light 5";
+	font-style: normal;
+	font-weight: normal;
+	font-stretch: normal;
+
+}
+
+#wikitext div.row .column, .columns {
+	padding: 0;
+	margin: 0;
+	
+}
+
+#wikitext div.row .column, .columns p{
+	font-size: .888888em;
+}
+
+
+
+#wikitext div.row .column, .columns + .columns{
+	padding-left: 1.1em;
+	padding-right: 1.1em;
+}
+
+#wikitext div.row .column, .columns + .columns:last-child {
+	padding-right: 0;
+}
+
+
+.slider-container .fixed-caption p{
+	background-color: #00979c;
+	display: inline;
+    box-shadow: 8px 0 0 0 #00979c, -8px 0 0 0 #00979c;
+    -moz-box-shadow: 8px 0 0 0 #00979c, -8px 0 0 0 #00979c;/*, 0 6px 0 0 #00979c;*/
+    -webkit-box-shadow: 8px 0 0 0 #00979c, -8px 0 0 0 #00979c;
+    font-size: 1.11111em;
+    padding:8px 0;
+	text-transform: uppercase;
+	-webkit-hyphens: none; /* Safari 5.1 thru 6, iOS 4.2 thru 6 */
+	-moz-hyphens: none; /* Firefox 16 thru 20 */
+	-ms-hyphens: none; /* IE10 */
+	-o-hyphens: none; /* PRESTO...haha LOL */
+	hyphens: none;	 /* W3C standard */
+}
+
+
+#wikitext p.small-text {
+	font-size: 0.82222em;
+	line-height: 1.5em;
+}
+
+/*		home		*/
+
+
+
+#homeWidget{
+	/* margin-top: -1.2777em; */
+}
+
+#homeWidget h3.sidebar-title {
+	display: none;
+}
+
+#wikiedit textarea {
+  height: 300px;
+}
+
+#wikitext div.row .lefted {
+	padding-right: 1.1em;
+	padding-left: 0;
+}
+#wikitext div.row .righted {
+	padding-right: 0;
+	padding-left: 1.1em;
+}
