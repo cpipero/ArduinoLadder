@@ -32,7 +32,12 @@
 				      <File Id="LadderLogic.exe_config" Source="..\bin\Debug\LadderLogic.exe.config"/>
               <File Id="LadderLogic_exe" Source="..\bin\Debug\LadderLogic.exe"/>
               <File Id="LadderLogic_pdb" Source="..\bin\Debug\LadderLogic.pdb"/>
-              <File Id="ladder_icon_png" Source="..\bin\Debug\ladder_icon.png"/>              
+              <File Id="ladder_icon_png" Source="..\bin\Debug\ladder_icon.png"/>
+							<ProgId Id='LadderLogic.exe.plcfile' Description='Arduino Ladded diagram'>
+								<Extension Id='plc' ContentType='text/xml'>
+									<Verb Id='open' Command='Open' TargetFile='LadderLogic_exe' Argument='"%1"' />
+								</Extension>
+							</ProgId>
 			    </Component>
           <Directory Id="Buttons" Name="Buttons">
             <Component Id="Buttons" Guid="44a78c31-8034-4708-a18f-4f8a794f0f0a">
