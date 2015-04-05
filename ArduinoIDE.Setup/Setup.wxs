@@ -39,7 +39,7 @@
 			<Directory Id="DesktopFolder">
 			</Directory>
 			<Directory Id="ProgramFilesFolder">
-				<Directory Id="INSTALLFOLDER" Name="ArduinoIDE" >
+				<Directory Id="INSTALLFOLDER" Name="Arduino" >
 					<Directory Id="dir6DC3BAEF056F593D9041BB6FE023FE11" Name="dist" />
 					<Directory Id="dir346BD9ED4EF743ECA16F5DE446F0A2BF" Name="drivers" />
 					<Directory Id="dirD08AAC21E03F85BB65D5DEEF6855A478" Name="examples" />
