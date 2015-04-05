@@ -78,6 +78,12 @@
 		<ComponentGroup Id="SuperFormFiles">
 			<Component Id="cmpC081BA7A6FCF536758A35AEC19388513" Directory="INSTALLFOLDER" Guid="{5758F3EA-8B4C-45CE-A08A-F42EE3F3C79C}">
 				<File Id="fil3A61EE9B35E54A63233CD0E53D6108A2" KeyPath="yes" Source="..\Libs\arduino-1.6.3-windows\arduino-1.6.3\arduino.exe" />
+				<ProgId Id='arduino.exe.inofile' Description='Arduino source file'>
+					<Extension Id='ino' ContentType='text/plain'>
+						<Verb Id='open' Command='Open' TargetFile='fil3A61EE9B35E54A63233CD0E53D6108A2' Argument='"%1"' />
+					</Extension>
+				</ProgId>
+
 			</Component>
 			<Component Id="cmp1B3CD547F64C7A06F21EA8AB97C1A40C" Directory="INSTALLFOLDER" Guid="{881D589C-5B77-40EC-B370-626D333B50DA}">
 				<File Id="fil0F15FF8138C825FE332F734E1A051B4B" KeyPath="yes" Source="..\Libs\arduino-1.6.3-windows\arduino-1.6.3\arduino.l4j.ini" />
