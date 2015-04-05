@@ -39,7 +39,7 @@
 			<Directory Id="DesktopFolder">
 			</Directory>
 			<Directory Id="ProgramFilesFolder">
-				<Directory Id="INSTALLFOLDER" Name="Arduino" >
+				<Directory Id="INSTALLFOLDER" Name="ArduinoIDE" >
 					<Directory Id="dir6DC3BAEF056F593D9041BB6FE023FE11" Name="dist" />
 					<Directory Id="dir346BD9ED4EF743ECA16F5DE446F0A2BF" Name="drivers" />
 					<Directory Id="dirD08AAC21E03F85BB65D5DEEF6855A478" Name="examples" />
@@ -60,7 +60,7 @@
 									Target="[#fil3A61EE9B35E54A63233CD0E53D6108A2]"
 									WorkingDirectory="APPLICATIONROOTDIRECTORY"/>
 				<RemoveFolder Id="ApplicationProgramsFolder" On="uninstall"/>
-				<RegistryValue Root="HKCU" Key="Software\Microsoft\Arduino" Name="installed" Type="integer" Value="1" KeyPath="yes"/>
+				<RegistryValue Root="HKCU" Key="Software\Microsoft\ArduinoIDE" Name="installed" Type="integer" Value="1" KeyPath="yes"/>
 			</Component>
 		</DirectoryRef>
 		<DirectoryRef Id="DesktopFolder">
@@ -70,7 +70,7 @@
 									Description="Arduino"
 									Target="[#fil3A61EE9B35E54A63233CD0E53D6108A2]"
 									WorkingDirectory="APPLICATIONROOTDIRECTORY"/>
-				<RegistryValue Root="HKCU" Key="Software\Microsoft\Arduino" Name="installed" Type="integer" Value="1" KeyPath="yes"/>
+				<RegistryValue Root="HKCU" Key="Software\Microsoft\ArduinoIDE" Name="installed" Type="integer" Value="1" KeyPath="yes"/>
 			</Component>
 		</DirectoryRef>
 	</Fragment>
