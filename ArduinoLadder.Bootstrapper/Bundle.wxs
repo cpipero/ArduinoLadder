@@ -18,6 +18,7 @@
 		 	<MsiPackage Id="GtkSharpSetup" SourceFile="..\Libs\gtk-sharp-2.12.22.msi" Compressed="no" ForcePerMachine="yes" Visible="yes" Vital="yes" Cache="yes"
                   InstallCondition="NOT(GTKSHARPVERSION &gt;= &quot;2.12.22&quot;)" Permanent="yes" DisplayInternalUI="no"
                   DownloadUrl="http://download.xamarin.com/GTKforWindows/Windows/gtk-sharp-2.12.22.msi" />
+			<MsiPackage Id="ArduinoIDE" SourceFile="..\ArduinoIDE.Setup\bin\Debug\ArduinoIDE.Setup.msi"/>
 		</Chain>
 	</Bundle>
 </Wix>

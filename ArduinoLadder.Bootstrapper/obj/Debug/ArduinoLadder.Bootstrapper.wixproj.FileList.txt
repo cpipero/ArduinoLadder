@@ -5,3 +5,6 @@ obj\Debug\ArduinoLadder.Bootstrapper.wixproj.BindContentsFileList.txt
 obj\Debug\ArduinoLadder.Bootstrapper.wixproj.BindOutputsFileList.txt
 obj\Debug\ArduinoLadder.Bootstrapper.wixproj.BindBuiltOutputsFileList.txt
 G:\Eugene\ArduinoLadder\ArduinoLadder.Bootstrapper\bin\Debug\gtk-sharp-2.12.22.msi
+G:\Disk_H\ArduinoLadder\ArduinoLadder.Bootstrapper\bin\Debug\gtk-sharp-2.12.22.msi
+G:\Disk_H\ArduinoLadder\ArduinoLadder.Bootstrapper\bin\Debug\ArduinoLadder.exe
+G:\Disk_H\ArduinoLadder\ArduinoLadder.Bootstrapper\bin\Debug\ArduinoLadder.wixpdb
