@@ -13,12 +13,19 @@
 		      <ComponentRef Id="CTool" />
 		      <ComponentRef Id="Element" />
 		      <ComponentRef Id="File_Config" />
-      
-    </Feature>
+					<ComponentRef Id="ApplicationShortcut"/>
+					<ComponentRef Id="DesktopShortcut"/>
+			
+		</Feature>
 	</Product>
 
 	<Fragment>
 		<Directory Id="TARGETDIR" Name="SourceDir">
+			<Directory Id="ProgramMenuFolder">
+				<Directory Id="ApplicationProgramsFolder" Name="Arduino Ladder"/>
+			</Directory>
+			<Directory Id="DesktopFolder">
+			</Directory>
 			<Directory Id="ProgramFilesFolder">
 				<Directory Id="INSTALLFOLDER" Name="ArduinoLadder" >
           <Component Id="ProductComponent" Guid="4da54f3e-5eb0-4c0a-94d7-1ba50f7b1b30"> 
@@ -70,6 +77,27 @@
         </Directory>
 			</Directory>
 		</Directory>
+		<DirectoryRef Id="ApplicationProgramsFolder">
+			<Component Id="ApplicationShortcut" Guid="af963be2-8947-495b-aa9d-71cc8266210c">
+				<Shortcut Id="ApplicationStartMenuShortcut"
+									Name="Arduino Ladder"
+									Description="Arduino Ladder from Beeond Inc."
+									Target="[#LadderLogic_exe]"
+									WorkingDirectory="APPLICATIONROOTDIRECTORY"/>
+				<RemoveFolder Id="ApplicationProgramsFolder" On="uninstall"/>
+				<RegistryValue Root="HKCU" Key="Software\Microsoft\ArduinoLadder" Name="installed" Type="integer" Value="1" KeyPath="yes"/>
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="DesktopFolder">
+			<Component Id="DesktopShortcut" Guid="59905d5c-8ff1-4df4-9e33-0a39a673314a">
+				<Shortcut Id="ApplicationStartMenuShortcut_1"
+									Name="Arduino Ladder"
+									Description="Arduino Ladder from Beeond Inc."
+									Target="[#LadderLogic_exe]"
+									WorkingDirectory="APPLICATIONROOTDIRECTORY"/>
+				<RegistryValue Root="HKCU" Key="Software\Microsoft\ArduinoLadder" Name="installed" Type="integer" Value="1" KeyPath="yes"/>
+			</Component>
+		</DirectoryRef>
 	</Fragment>
 
 </Wix>

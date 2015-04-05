@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
 	<Product Id="*"
-		Name="Arduino IDE"
+		Name="Arduino"
 		Language="1033"
 		Version="1.0.0.0"
 		UpgradeCode="EB27C8C2-D471-43DD-A09E-AA43B147A38B"

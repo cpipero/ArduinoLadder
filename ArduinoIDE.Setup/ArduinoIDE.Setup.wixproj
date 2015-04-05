@@ -29,5 +29,8 @@
   <ItemGroup>
     <Compile Include="Setup.wxs" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Arduino.png" />
+  </ItemGroup>
   <Import Project="$(WixTargetsPath)" />
 </Project>
