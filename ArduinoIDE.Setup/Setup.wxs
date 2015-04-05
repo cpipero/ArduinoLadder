@@ -15,12 +15,10 @@
 		</Feature>
 
 		<CustomAction  Id='Install_Driver_Arduino_64' Execute='deferred'
-	  Directory='dir346BD9ED4EF743ECA16F5DE446F0A2BF'  ExeCommand='&quot;[dir346BD9ED4EF743ECA16F5DE446F0A2BF]dpinst-amd64.exe&quot; /SW 
-	  /SA /PATH  &quot;[dir346BD9ED4EF743ECA16F5DE446F0A2BF]' Return='ignore' />
+	  Directory='dir346BD9ED4EF743ECA16F5DE446F0A2BF'  ExeCommand='&quot;[dir346BD9ED4EF743ECA16F5DE446F0A2BF]dpinst-amd64.exe&quot;' Return='ignore' />
 
 		<CustomAction  Id='Install_Driver_Arduino_86' Execute='deferred'
-	  Directory='dir346BD9ED4EF743ECA16F5DE446F0A2BF'  ExeCommand='&quot;[dir346BD9ED4EF743ECA16F5DE446F0A2BF]dpinst-x86.exe&quot; /SW 
-	  /SA /PATH  &quot;[dir346BD9ED4EF743ECA16F5DE446F0A2BF]' Return='ignore' />
+	  Directory='dir346BD9ED4EF743ECA16F5DE446F0A2BF'  ExeCommand='&quot;[dir346BD9ED4EF743ECA16F5DE446F0A2BF]dpinst-x86.exe&quot;' Return='ignore' />
 
 		<InstallExecuteSequence>
 			<Custom  Action="Install_Driver_Arduino_64" After="InstallFiles">
