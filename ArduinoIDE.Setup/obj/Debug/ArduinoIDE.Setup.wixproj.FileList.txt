@@ -1,0 +1,6 @@
+obj\\Debug\Setup.wixobj
+G:\Disk_H\ArduinoLadder\ArduinoIDE.Setup\bin\Debug\ArduinoIDE.Setup.msi
+G:\Disk_H\ArduinoLadder\ArduinoIDE.Setup\bin\Debug\ArduinoIDE.Setup.wixpdb
+obj\\Debug\ArduinoIDE.Setup.wixproj.BindContentsFileListnull.txt
+obj\\Debug\ArduinoIDE.Setup.wixproj.BindOutputsFileListnull.txt
+obj\\Debug\ArduinoIDE.Setup.wixproj.BindBuiltOutputsFileListnull.txt

@@ -1,0 +1,2 @@
+G:\Disk_H\ArduinoLadder\ArduinoIDE.Setup\bin\Debug\ArduinoIDE.Setup.msi
+G:\Disk_H\ArduinoLadder\ArduinoIDE.Setup\bin\Debug\ArduinoIDE.Setup.wixpdb
