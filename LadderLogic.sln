@@ -1,19 +1,18 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+# SharpDevelop 5.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LadderLogic", "LadderLogic.csproj", "{EC31E108-4964-4E61-823F-2077D48F1E15}"
 EndProject
-Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "ArduinoLadder.Setup", "ArduinoLadder.Setup\ArduinoLadder.Setup.wixproj", "{0DBD6B91-8D07-4D0D-BB92-9C88BA501AEF}"
+Project("{CFEE4113-1246-4D54-95CB-156813CB8593}") = "ArduinoLadder.Setup", "ArduinoLadder.Setup\ArduinoLadder.Setup.wixproj", "{0DBD6B91-8D07-4D0D-BB92-9C88BA501AEF}"
 EndProject
-Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "ArduinoLadder.Bootstrapper", "ArduinoLadder.Bootstrapper\ArduinoLadder.Bootstrapper.wixproj", "{626FD23A-2D9F-40C6-94F4-D8DAAB60A3EA}"
+Project("{CFEE4113-1246-4D54-95CB-156813CB8593}") = "ArduinoLadder.Bootstrapper", "ArduinoLadder.Bootstrapper\ArduinoLadder.Bootstrapper.wixproj", "{626FD23A-2D9F-40C6-94F4-D8DAAB60A3EA}"
 	ProjectSection(ProjectDependencies) = postProject
 		{EC31E108-4964-4E61-823F-2077D48F1E15} = {EC31E108-4964-4E61-823F-2077D48F1E15}
 		{0DBD6B91-8D07-4D0D-BB92-9C88BA501AEF} = {0DBD6B91-8D07-4D0D-BB92-9C88BA501AEF}
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArduinoLadder.CustomAction", "ArduinoLadder.CustomAction\ArduinoLadder.CustomAction.csproj", "{E97B170A-196B-4D85-BCD3-DF378A9B8395}"
-EndProject
-Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "ArduinoIDE.Setup", "ArduinoIDE.Setup\ArduinoIDE.Setup.wixproj", "{F03C2E93-8CEC-411F-B6B5-4D7EB2BA8428}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,10 +36,6 @@ Global
 		{E97B170A-196B-4D85-BCD3-DF378A9B8395}.Debug|x86.Build.0 = Debug|x86
 		{E97B170A-196B-4D85-BCD3-DF378A9B8395}.Release|x86.ActiveCfg = Release|x86
 		{E97B170A-196B-4D85-BCD3-DF378A9B8395}.Release|x86.Build.0 = Release|x86
-		{F03C2E93-8CEC-411F-B6B5-4D7EB2BA8428}.Debug|x86.ActiveCfg = Debug|x86
-		{F03C2E93-8CEC-411F-B6B5-4D7EB2BA8428}.Debug|x86.Build.0 = Debug|x86
-		{F03C2E93-8CEC-411F-B6B5-4D7EB2BA8428}.Release|x86.ActiveCfg = Release|x86
-		{F03C2E93-8CEC-411F-B6B5-4D7EB2BA8428}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

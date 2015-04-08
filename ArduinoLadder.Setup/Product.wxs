@@ -13,10 +13,25 @@
 		      <ComponentRef Id="CTool" />
 		      <ComponentRef Id="Element" />
 		      <ComponentRef Id="File_Config" />
-					<ComponentRef Id="ApplicationShortcut"/>
-					<ComponentRef Id="DesktopShortcut"/>
-			
+			  <ComponentRef Id="ApplicationShortcut"/>
+			  <ComponentRef Id="DesktopShortcut"/>
+			  <ComponentGroupRef Id="SuperFormFiles"/>			
 		</Feature>
+		<CustomAction  Id='Install_Driver_Arduino_64' Execute='deferred'
+	  Directory='dir346BD9ED4EF743ECA16F5DE446F0A2BF'  ExeCommand='&quot;[dir346BD9ED4EF743ECA16F5DE446F0A2BF]dpinst-amd64.exe&quot;' Return='ignore' />
+
+		<CustomAction  Id='Install_Driver_Arduino_86' Execute='deferred'
+	  Directory='dir346BD9ED4EF743ECA16F5DE446F0A2BF'  ExeCommand='&quot;[dir346BD9ED4EF743ECA16F5DE446F0A2BF]dpinst-x86.exe&quot;' Return='ignore' />
+	
+		<InstallExecuteSequence>
+			<Custom  Action="Install_Driver_Arduino_64" After="InstallFiles">
+				NOT Installed And VersionNT64
+			</Custom>
+			<Custom Action="Install_Driver_Arduino_86"  After="InstallFiles">
+				NOT Installed And NOT VersionNT64
+			</Custom>
+		</InstallExecuteSequence>
+	
 	</Product>
 
 	<Fragment>
@@ -79,9 +94,38 @@
               </Component>
             </Directory>
           </Directory>
+					<Directory Id="dir346BD9ED4EF743ECA16F5DE446F0A2BF" Name="drivers" />
+					<Directory Id="dirD08AAC21E03F85BB65D5DEEF6855A478" Name="examples" />
+					<Directory Id="dir7A1FF824DE499BE4E3E4223F5CBDAACE" Name="hardware" />
+					<Directory Id="dir02717FAFEE4D397020D86BBA2A3D6D29" Name="java" />
+					<Directory Id="dir9CDED95B4F5F0C2733B72C71CFEB5832" Name="lib" />
+					<Directory Id="dir8188DC9708EFBFC388012DC1D544C090" Name="libraries" />
+					<Directory Id="dir3ECA794EFD770435BF0AD617E7FD2750" Name="reference" />
+					<Directory Id="dirBBA27ADC2E9B86DBF7345B221CC79E19" Name="tools" />
         </Directory>
 			</Directory>
 		</Directory>
+		<DirectoryRef Id="dir346BD9ED4EF743ECA16F5DE446F0A2BF">
+			<Directory Id="dir996D20C908DA7CB1A2A49C83458B3897" Name="FTDI USB Drivers" />
+		</DirectoryRef>
+		<DirectoryRef Id="dir996D20C908DA7CB1A2A49C83458B3897">
+			<Directory Id="dir040612DDBDD94A678F7C9297A9242D01" Name="amd64" />
+		</DirectoryRef>
+		<DirectoryRef Id="dir996D20C908DA7CB1A2A49C83458B3897">
+			<Directory Id="dir0A988E5F121F5D384D79778E39A28BE9" Name="Static" />
+		</DirectoryRef>
+		<DirectoryRef Id="dir996D20C908DA7CB1A2A49C83458B3897">
+			<Directory Id="dirDBA0C7E28D219F340F26BB70325021F3" Name="i386" />
+		</DirectoryRef>
+		
+		<DirectoryRef Id="dir0A988E5F121F5D384D79778E39A28BE9">
+			<Directory Id="dir39928BB13AC1AC3399C37CB2C273AA95" Name="amd64" />
+		</DirectoryRef>
+		
+		<DirectoryRef Id="dir0A988E5F121F5D384D79778E39A28BE9">
+			<Directory Id="dirF9D67124FCC1809A373A4E1333A13728" Name="i386" />
+		</DirectoryRef>
+		
 		<DirectoryRef Id="ApplicationProgramsFolder">
 			<Component Id="ApplicationShortcut" Guid="af963be2-8947-495b-aa9d-71cc8266210c">
 				<Shortcut Id="ApplicationStartMenuShortcut"
@@ -103,6 +147,107 @@
 				<RegistryValue Root="HKCU" Key="Software\Microsoft\ArduinoLadder" Name="installed" Type="integer" Value="1" KeyPath="yes"/>
 			</Component>
 		</DirectoryRef>
+	
+		<ComponentGroup Id="SuperFormFiles">
+				<Component Id="cmpE2C21F7CFAA69B604B9DE4F0A52779BC" Directory="dir346BD9ED4EF743ECA16F5DE446F0A2BF" Guid="{7D197364-49DB-4458-971B-50E2016B2014}">
+					<File Id="fil024865859E4DE12227105117858455EF" KeyPath="yes" Source="..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\arduino-org.cat" />
+				</Component>
+				<Component Id="cmpEEEEF2F176F0766EF1D4DC3C6B256287" Directory="dir346BD9ED4EF743ECA16F5DE446F0A2BF" Guid="{D5F30F2C-1F5F-41A7-911F-5E9E1CF59333}">
+					<File Id="fil9643FF8F07445AE829306085B1DA070B" KeyPath="yes" Source="..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\arduino-org.inf" />
+				</Component>
+				<Component Id="cmp1F79E3F25B09C68C7EB028B2573D1DBD" Directory="dir346BD9ED4EF743ECA16F5DE446F0A2BF" Guid="{63530267-80A6-44D2-917A-A257B8DA2D08}">
+					<File Id="filF676FC134A3A98B46541BF634A576FE5" KeyPath="yes" Source="..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\arduino.cat" />
+				</Component>
+				<Component Id="cmp27D30C8CDE9B85F01B3CE6FCC48D1720" Directory="dir346BD9ED4EF743ECA16F5DE446F0A2BF" Guid="{0E3A84BB-B415-4D7A-B376-2C6732710C61}">
+					<File Id="filD30F24D5EAB129DE5D1DE47A282BA0FD" KeyPath="yes" Source="..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\arduino.inf" />
+				</Component>
+				<Component Id="cmpDE6C936D7801B7D88EDF0872D22E5BAF" Directory="dir346BD9ED4EF743ECA16F5DE446F0A2BF" Guid="{34EB5EBE-E7E1-4AAA-800D-B45CC47FAD6B}">
+					<File Id="fil7D81354F4C3358FB14EA91B6BEF109F3" KeyPath="yes" Source="..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\dpinst-amd64.exe" />
+					<Condition>VersionNT64</Condition>
+				</Component>
+				<Component Id="cmpD72F06594E1D34CE5851A435A1C5F72A" Directory="dir346BD9ED4EF743ECA16F5DE446F0A2BF" Guid="{7EB6C5EB-6E0F-4FC4-965C-2A9A5AE724BF}">
+					<File Id="filC1528EBB0A93DE243A50F15B23214A3C" KeyPath="yes" Source="..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\dpinst-x86.exe" />
+					<Condition>NOT VersionNT64</Condition>
+				</Component>
+				<Component Id="cmp70BDBE57E8051F358656A6E1239ADCA4" Directory="dir346BD9ED4EF743ECA16F5DE446F0A2BF" Guid="{93938877-F847-4EEA-9FE2-B4D4985556C0}">
+					<File Id="fil60EC47F69E6B386021F6BC1A8F7DE1BD" KeyPath="yes" Source="..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\Old_Arduino_Drivers.zip" />
+				</Component>
+				<Component Id="cmp0A8624CD02F51CDA60B20F7372666014" Directory="dir346BD9ED4EF743ECA16F5DE446F0A2BF" Guid="{7B1E54FF-EB4B-43BC-97E1-AE3D7EA5BDE2}">
+					<File Id="fil91667DC0F4A70D769F3222CA8A478E99" KeyPath="yes" Source="..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\README.txt" />
+				</Component>
+				<Component Id="cmpD7E1576B092213D5EFC5C916CF9F5F2E" Directory="dir996D20C908DA7CB1A2A49C83458B3897" Guid="{AAC56203-51B0-4D31-9381-3BB195DE4B01}">
+					<File Id="fil849409D7B332B2A3E525758CE53D2241" KeyPath="yes" Source="..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\ftd2xx.h" />
+				</Component>
+				<Component Id="cmp761E46EB0ED3D0032807B001234BF477" Directory="dir996D20C908DA7CB1A2A49C83458B3897" Guid="{DD4F966A-C8B0-4083-9B12-65B680BDC7BE}">
+					<File Id="fil064D2AED808700889439E3927DC7635D" KeyPath="yes" Source="..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\ftdibus.cat" />
+				</Component>
+				<Component Id="cmp6A2650A980F485431579B45133B9BF2A" Directory="dir996D20C908DA7CB1A2A49C83458B3897" Guid="{470B519D-64E5-4EB8-A70A-4282CD567703}">
+					<File Id="fil02E79FBF02C3EB528E049C626C824ABB" KeyPath="yes" Source="..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\ftdibus.inf" />
+				</Component>
+				<Component Id="cmpBF9F0623E4CB6CA92DE665154B7ECF14" Directory="dir996D20C908DA7CB1A2A49C83458B3897" Guid="{55662B80-EDC0-4B39-88DE-D9A8D12EAFA6}">
+					<File Id="fil0CBE3BD120DDD359520562E844EBC034" KeyPath="yes" Source="..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\ftdiport.cat" />
+				</Component>
+				<Component Id="cmpF3891E9128FEE88A72042305E5563AC0" Directory="dir996D20C908DA7CB1A2A49C83458B3897" Guid="{FAF82835-252C-437A-85DB-3C32B99E03A4}">
+					<File Id="fil34D005A5F23840C7BF85F3D7E31111F2" KeyPath="yes" Source="..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\ftdiport.inf" />
+				</Component>
+				<Component Id="cmp0E1FA59A96212F02CA8CA2F2D69909D0" Directory="dir996D20C908DA7CB1A2A49C83458B3897" Guid="{E2C2FD90-4280-40A8-BDBF-C6938F561136}">
+					<File Id="filB0989D340DE522BC2AB87FE0968BD467" KeyPath="yes" Source="..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\LogoVerificationReport.pdf" />
+				</Component>
+				<Component Id="cmp97FE3F86BCFB0C04D37E62128B29C691" Directory="dir040612DDBDD94A678F7C9297A9242D01" Guid="{818AD21B-ECE1-4EB2-B845-15C9D5FD9457}">
+					<File Id="fil097CF9558E07B39FD4F1E5F403630131" KeyPath="yes" Source="..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\amd64\ftbusui.dll" />
+				</Component>
+				<Component Id="cmpE4229411E94E3782B7E70A30017ECC9C" Directory="dir040612DDBDD94A678F7C9297A9242D01" Guid="{FFDF94D4-8FE3-412E-BC96-E0185BDA7F3B}">
+					<File Id="fil9517308603FB1ABA99FE9F5E6E88008F" KeyPath="yes" Source="..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\amd64\ftcserco.dll" />
+				</Component>
+				<Component Id="cmpAE6821F1046F5E1BB618F79ECDE225E5" Directory="dir040612DDBDD94A678F7C9297A9242D01" Guid="{C25DDBA7-FDB5-404D-B9E9-685BE0546B97}">
+					<File Id="filE7AAAC2EFE092E53233737608B6AAD11" KeyPath="yes" Source="..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\amd64\ftd2xx.lib" />
+				</Component>
+				<Component Id="cmp638A847A2B05819AD8D2D1F2C211B417" Directory="dir040612DDBDD94A678F7C9297A9242D01" Guid="{0D33B8DE-7EB7-4533-B787-BF1E2FE576F4}">
+					<File Id="fil3259D3AF10A75193BF03D070640F420F" KeyPath="yes" Source="..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\amd64\ftd2xx64.dll" />
+				</Component>
+				<Component Id="cmpD335B3DFF264111F8D944EB056847878" Directory="dir040612DDBDD94A678F7C9297A9242D01" Guid="{FC964F42-AB22-4E8D-9063-C05850118492}">
+					<File Id="filFEE89A3EE4537F465FBE1C7F9542C94B" KeyPath="yes" Source="..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\amd64\ftdibus.sys" />
+				</Component>
+				<Component Id="cmp5723B398499B7ED06998A99C8024194B" Directory="dir040612DDBDD94A678F7C9297A9242D01" Guid="{06680145-132E-4A2B-A4CB-9038BFDF60D3}">
+					<File Id="filBA77C5F216D43000E3DA3619A3644513" KeyPath="yes" Source="..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\amd64\ftlang.dll" />
+				</Component>
+				<Component Id="cmp2DCAB897BABABAF1305E7F5B2D648DA9" Directory="dir040612DDBDD94A678F7C9297A9242D01" Guid="{8FD2C33E-39BF-405C-B08C-DD750538160B}">
+					<File Id="fil782D2915FB15633CF7503F3A1B94A59F" KeyPath="yes" Source="..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\amd64\ftser2k.sys" />
+				</Component>
+				<Component Id="cmp762D9C62BA911B36499899A5E1B1FC17" Directory="dir040612DDBDD94A678F7C9297A9242D01" Guid="{DB0ADEC1-CE37-4DA3-9F40-BE99864B0F89}">
+					<File Id="filBD0D2B001D33BBB430CEC56B496CA5C6" KeyPath="yes" Source="..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\amd64\ftserui2.dll" />
+				</Component>
+				<Component Id="cmpAB5AF4E48E9CB4C673315ABB7413206E" Directory="dirDBA0C7E28D219F340F26BB70325021F3" Guid="{28896899-64C6-4DEE-B127-DE7602F50834}">
+					<File Id="fil5611911BCDE2B7B907B683C43BBCEAE0" KeyPath="yes" Source="..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\i386\ftbusui.dll" />
+				</Component>
+				<Component Id="cmp1D5827BEA654F0C67CAD6123BCCE498D" Directory="dirDBA0C7E28D219F340F26BB70325021F3" Guid="{A0E54F8B-9BB0-4C05-97E4-5704ECDBC636}">
+					<File Id="fil8821D314DD702FFCB3E195DD7D3B2596" KeyPath="yes" Source="..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\i386\ftcserco.dll" />
+				</Component>
+				<Component Id="cmp66C1827D6CC71A430676EBC864FC637B" Directory="dirDBA0C7E28D219F340F26BB70325021F3" Guid="{148B767A-21F6-43DD-9873-7E953FAD0278}">
+					<File Id="fil77450A00C79866B948E2248AD2B47767" KeyPath="yes" Source="..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\i386\ftd2xx.dll" />
+				</Component>
+				<Component Id="cmp0D48FB64BC0C40B1D402472FA1A481A4" Directory="dirDBA0C7E28D219F340F26BB70325021F3" Guid="{4B82A085-8A37-42F5-A2F7-B64BA161A7F0}">
+					<File Id="filA869AA73766FB5B00B57D8A523E287CD" KeyPath="yes" Source="..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\i386\ftd2xx.lib" />
+				</Component>
+				<Component Id="cmpCC03A321A61491C64A89A6C866355CCC" Directory="dirDBA0C7E28D219F340F26BB70325021F3" Guid="{3741F6AA-18BB-46B9-8684-189DD71BC9B4}">
+					<File Id="fil8784E5662D6458D787BBE130F70C5934" KeyPath="yes" Source="..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\i386\ftdibus.sys" />
+				</Component>
+				<Component Id="cmp9492D07568D77AFABB362183ACA5CD6A" Directory="dirDBA0C7E28D219F340F26BB70325021F3" Guid="{7850213D-F8B7-4C6D-B71F-44147843F889}">
+					<File Id="filD033AE9DD8BA3DCB2C82A3809174173E" KeyPath="yes" Source="..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\i386\ftlang.dll" />
+				</Component>
+				<Component Id="cmpF0C4E4703AF5CBF948A5E7E5C381F722" Directory="dirDBA0C7E28D219F340F26BB70325021F3" Guid="{B387116C-79C0-4591-B602-7710E07180B4}">
+					<File Id="fil9B471BF5CAB1B07172C5B6C76950D2A1" KeyPath="yes" Source="..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\i386\ftser2k.sys" />
+				</Component>
+				<Component Id="cmpD85438C30AA142E626C3228B0E6FDA6E" Directory="dirDBA0C7E28D219F340F26BB70325021F3" Guid="{BF2F9DC1-7791-4107-B168-F7E05C2B510D}">
+					<File Id="fil28F0A3199C304A5C2D275DFCC5AC2877" KeyPath="yes" Source="..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\i386\ftserui2.dll" />
+				</Component>
+				<Component Id="cmpDCE060FBB55E54D34607C369C1D10230" Directory="dir39928BB13AC1AC3399C37CB2C273AA95" Guid="{6FD39A8A-CF41-446F-AEE1-0CDB0B130AAE}">
+					<File Id="filB509259556C7C311FCFA923CC46B9121" KeyPath="yes" Source="..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\Static\amd64\ftd2xx.lib" />
+				</Component>
+				<Component Id="cmp86AF0E180CCE01B9C252CB8522CD69DE" Directory="dirF9D67124FCC1809A373A4E1333A13728" Guid="{7EB9F33A-A16D-47E1-AD33-50B37FC395B9}">
+					<File Id="filCEC5A4DD4FCAF1AC8C0658EA93E83182" KeyPath="yes" Source="..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\Static\i386\ftd2xx.lib" />
+				</Component>
+		</ComponentGroup>
 	</Fragment>
 
 </Wix>
