@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi" xmlns:util="http://schemas.microsoft.com/wix/UtilExtension">
 	<Product Id="*" Name="Arduino Ladder" Language="1033" Version="1.0.0.0" Manufacturer="Beeond Inc." UpgradeCode="dd17e2e3-a29d-4f23-8814-301962ad6e52">
 		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine"  />
 
@@ -23,6 +23,12 @@
 		<CustomAction  Id='Install_Driver_Arduino_86' Execute='deferred'
 	  Directory='dir346BD9ED4EF743ECA16F5DE446F0A2BF'  ExeCommand='&quot;[dir346BD9ED4EF743ECA16F5DE446F0A2BF]dpinst-x86.exe&quot;' Return='ignore' />
 	
+		
+
+		<Condition Message="This application requires Arduino IDE installed from Arduino.cc.">
+    			<![CDATA[NOT(ARDUINO)]]>
+		</Condition>
+		
 		<InstallExecuteSequence>
 			<Custom  Action="Install_Driver_Arduino_64" After="InstallFiles">
 				NOT Installed And VersionNT64
@@ -35,6 +41,8 @@
 	</Product>
 
 	<Fragment>
+		<util:RegistrySearch Variable="ARDUINO" Id="arduino" Root="HKLM" Key="SOFTWARE\Wow6432Node\Arduino1\Install_Dir" Result="value" Format="raw" />
+		
 		<Directory Id="TARGETDIR" Name="SourceDir">
 			<Directory Id="ProgramMenuFolder">
 				<Directory Id="ApplicationProgramsFolder" Name="Arduino Ladder"/>
