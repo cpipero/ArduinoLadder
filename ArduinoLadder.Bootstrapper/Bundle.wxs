@@ -13,13 +13,13 @@
 		<util:RegistrySearch Variable="ARDUINO" Id="arduino" Root="HKLM" Key="SOFTWARE\Wow6432Node\Arduino" Result="exists"/>
 		<util:RegistrySearch Variable="ARDUINO1" Id="arduino1" Root="HKLM" Key="SOFTWARE\Arduino" Result="exists"/>
 		
-		<Variable Name="LaunchTarget" Value="[InstallFolder]\LadderLogic.exe"/>
+		<Variable Name="LaunchTarget" Value="[ProgramFilesFolder]\ArduinoLadder\LadderLogic.exe"/>
 		
-		<bal:Condition Message="This application requires Arduino IDE installed from Arduino.cc.">
+		<bal:Condition Message="This application requires Arduino IDE installed from Arduino.cc">
     			ARDUINO Or NOT VersionNT64
 		</bal:Condition>
 		
-		<bal:Condition Message="This application requires Arduino IDE installed from Arduino.cc.">
+		<bal:Condition Message="This application requires Arduino IDE installed from Arduino.cc">
     			ARDUINO1 Or VersionNT64
 		</bal:Condition>
 		
