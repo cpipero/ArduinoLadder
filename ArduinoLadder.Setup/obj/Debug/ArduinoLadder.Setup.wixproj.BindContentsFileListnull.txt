@@ -5,34 +5,70 @@
 ..\bin\Debug\Element\CycleTimer.xml
 ..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\arduino-org.cat
 ..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\ftdibus.inf
+..\Examples\\SequentialFunctionChart\SimpleSwitchSequence.plc
 ..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\ftdibus.cat
 ..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\amd64\ftbusui.dll
+..\Examples\\Logic\CascadedLogic3.plc
 ..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\ftdiport.cat
+..\Examples\\AnalogCompare\LessThan.plc
+..\Examples\\InputOutput\BareMinimum.plc
+..\Examples\\InputOutput\DigitalInputOutput.plc
+..\Examples\\SequentialFunctionChart\ParallelSwitchBranch.plc
 ..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\i386\ftserui2.dll
+..\Examples\\TimeDelays\SwitchDebounce.plc
+..\Examples\\TimeDelays\DelayOff.plc
 ..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\amd64\ftd2xx64.dll
 ..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\ftdiport.inf
+..\Examples\\InputOutput\PWM.plc
+..\Examples\\Logic\CascadedLogic2.plc
+..\Examples\\Latch\LatchSetResetCommands
+..\Examples\\SequentialFunctionChart\RepeatingSwitchSequence
+..\Examples\\Latch\LatchCommand.plc
 ..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\i386\ftbusui.dll
+..\Examples\\Logic\AndOrXorNot.plc
 ..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\Old_Arduino_Drivers.zip
+..\Examples\\Logic\CascadedLogic1.plc
 ..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\i386\ftd2xx.dll
 ..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\amd64\ftser2k.sys
 ..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\dpinst-amd64.exe
 ..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\ftd2xx.h
 ..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\i386\ftdibus.sys
 ..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\i386\ftcserco.dll
+..\Examples\\Applications\SingleTrafficLight.plc
+..\Examples\\Applications\AlarmWithArmedStatus.plc
 ..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\README.txt
+..\Examples\\Applications\SimpleAlarmSetReset.plc
 ..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\amd64\ftcserco.dll
+..\Examples\\Applications\RunningLightDisplay.plc
 ..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\arduino-org.inf
 ..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\i386\ftser2k.sys
 ..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\i386\ftd2xx.lib
+..\Examples\\SequentialFunctionChart\SelectiveSwitchBranchConverge.plc
+..\Examples\\Applications\SimpleAlarmLatch.plc
+..\Examples\\SequentialFunctionChart\SimpleTimedSequence.plc
+..\Examples\\Logic\InvertedInputLogic.plc
 ..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\LogoVerificationReport.pdf
+..\Examples\\AnalogCompare\MaxMin.plc
+..\Examples\\AnalogCompare\LessThanThreshold.plc
 ..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\Static\amd64\ftd2xx.lib
+..\Examples\\TimeDelays\FixedPulse.plc
 ..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\amd64\ftlang.dll
 ..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\amd64\ftserui2.dll
+..\Examples\\Variables\ComplexLogic.plc
 ..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\dpinst-x86.exe
+..\Examples\\AnalogCompare\GreaterThanThreshold.plc
+..\Examples\\TimeDelays\DelayOn.plc
+..\Examples\\AnalogCompare\GreaterThan.plc
 ..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\Static\i386\ftd2xx.lib
 ..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\i386\ftlang.dll
 ..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\arduino.inf
+..\Examples\\Latch\LatchDiscreteComponents.plc
+..\Examples\\SequentialFunctionChart\ParallelSwitchBranchConverge.plc
+..\Examples\\Waveforms\PulsedOutput.plc
 ..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\amd64\ftd2xx.lib
+..\Examples\\SequentialFunctionChart\SelectiveSwitchBranch.plc
+..\Examples\\Logic\FourInputOr.plc
+..\Examples\\Logic\NandNorXnor.plc
 ..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\arduino.cat
 ..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\amd64\ftdibus.sys
 ..\bin\Debug\ladder_icon.png

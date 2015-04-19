@@ -16,7 +16,8 @@
 					<ComponentRef Id="INSTALLFOLDER_Permission"/>
 					<ComponentRef Id="ApplicationShortcut"/>
 					<ComponentRef Id="DesktopShortcut"/>
-					<ComponentGroupRef Id="SuperFormFiles"/>			
+					<ComponentGroupRef Id="SuperFormFiles"/>
+					<ComponentGroupRef Id="SuperFormFiles1"/>
 		</Feature>
 		<CustomAction  Id='Install_Driver_Arduino_64' Execute='deferred'
 	  Directory='dir346BD9ED4EF743ECA16F5DE446F0A2BF'  ExeCommand='&quot;[dir346BD9ED4EF743ECA16F5DE446F0A2BF]dpinst-amd64.exe&quot;' Return='ignore' />
@@ -258,6 +259,7 @@
             </CreateFolder>
         </Component>
     </DirectoryRef>
+	
 	</Fragment>
 
 </Wix>

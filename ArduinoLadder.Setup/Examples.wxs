@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<!--Generated with heat.exe : http://weblogs.sqlteam.com/mladenp/archive/2010/02/23/WiX-3-Tutorial-Generating-filedirectory-fragments-with-Heat.exe.aspx-->
+	<Fragment>
+		<DirectoryRef Id="INSTALLFOLDER">
+			<Directory Id="dirArduinoLadderExamples" Name="Examples">
+				<Directory Id="dir41B05AAA80F08F66602E3B80A215CD27" Name="AnalogCompare">
+					<Component Id="cmp4CD5F4A9A672A90DD1EA036118470238" Guid="{DF966085-FF44-4048-AF98-4B58B930DC75}">
+						<File Id="filCC1CABA0F26D915E0CDFD1BAA4D1B29C" KeyPath="yes" Source="..\Examples\\AnalogCompare\GreaterThan.plc" />
+					</Component>
+					<Component Id="cmp3DC9630D2A46C9E463C86F26F313B77A" Guid="{5DFE59D5-3A8F-46A6-A1D1-11DFF7934F46}">
+						<File Id="filC5645AD0C8D0E871FA6C10CF885C5C79" KeyPath="yes" Source="..\Examples\\AnalogCompare\GreaterThanThreshold.plc" />
+					</Component>
+					<Component Id="cmp5742B25DA2D1E90DFDC1B4DB9E88EA76" Guid="{199CD4FF-FCC0-4058-823E-C6CF0E29B738}">
+						<File Id="fil0E4D6638300DC7A3EFE7A1E72E1D908E" KeyPath="yes" Source="..\Examples\\AnalogCompare\LessThan.plc" />
+					</Component>
+					<Component Id="cmp4429947F784193813861554F96A0519D" Guid="{19FE0025-C855-46A7-A9FB-F14003BCF3AC}">
+						<File Id="filB198C71BC93C1027900D1DD159ACF0E4" KeyPath="yes" Source="..\Examples\\AnalogCompare\LessThanThreshold.plc" />
+					</Component>
+					<Component Id="cmp0FA41CD047645980CE0467DD4713DF88" Guid="{52CE7A1D-7934-40D4-AA70-41AB07ADE889}">
+						<File Id="filB0D7B7E0D49C9D951F7AF04833CC5940" KeyPath="yes" Source="..\Examples\\AnalogCompare\MaxMin.plc" />
+					</Component>
+				</Directory>
+				<Directory Id="dirF0F12E01FB5C4C6C1679B37AEA84648C" Name="Applications">
+					<Component Id="cmp6CDD1ACB372339C6C32BBD02914292E4" Guid="{4492C9C5-A7CA-4C81-B5B2-1B456FEE383D}">
+						<File Id="fil8D410BF724E62453BC3D6BA8EBA6A5EA" KeyPath="yes" Source="..\Examples\\Applications\AlarmWithArmedStatus.plc" />
+					</Component>
+					<Component Id="cmp6087CE841C6B3FFF67969C0304373407" Guid="{E903F74E-0F61-45EC-9624-9AE6E345BD38}">
+						<File Id="fil9619B6FBB7F9BC56BEB2292FF7EE95A0" KeyPath="yes" Source="..\Examples\\Applications\RunningLightDisplay.plc" />
+					</Component>
+					<Component Id="cmpE5F7B33951F43C1E77FC299C7FF1D17E" Guid="{102F8660-FD11-4237-B30C-AF802E5FAB26}">
+						<File Id="filA997D6A587412DB8A54F10C7FA84F167" KeyPath="yes" Source="..\Examples\\Applications\SimpleAlarmLatch.plc" />
+					</Component>
+					<Component Id="cmp9738DB4166BDDDD096EE9ADB521AD1E0" Guid="{809A3EFD-9A22-41E5-949D-420DE078D71C}">
+						<File Id="fil93462A6AF2690152C747C983AC43E9BE" KeyPath="yes" Source="..\Examples\\Applications\SimpleAlarmSetReset.plc" />
+					</Component>
+					<Component Id="cmp3D5A59CB1D61FFC8FB7784A8BE164AC1" Guid="{58996EAA-3755-4B1F-95D3-06FF3134F0B1}">
+						<File Id="fil8B91F415A7033E50AED36387530D49BE" KeyPath="yes" Source="..\Examples\\Applications\SingleTrafficLight.plc" />
+					</Component>
+				</Directory>
+				<Directory Id="dirE7C7CE954620EA7BB4F9070C1C51215C" Name="InputOutput">
+					<Component Id="cmpBA9E3F016E0CD4D2C1D7AD5F28A02BEC" Guid="{B1D04EF3-FC07-4857-843C-E34CDC1CB426}">
+						<File Id="fil114AF834B7779724A50CDFE4791377EA" KeyPath="yes" Source="..\Examples\\InputOutput\BareMinimum.plc" />
+					</Component>
+					<Component Id="cmp1FBFA40CE98C45E542FCA7C97E837B2C" Guid="{050CF31C-3E1A-4FDE-8301-01E769989B4E}">
+						<File Id="fil19B645BE4D6721EE0A53BE20DFDE3CA0" KeyPath="yes" Source="..\Examples\\InputOutput\DigitalInputOutput.plc" />
+					</Component>
+					<Component Id="cmp1A4EAA8B8C64FB5079410094A5E97F07" Guid="{13AF2F34-2D68-447F-8CAA-62BF90275141}">
+						<File Id="fil35944784F8E530890569EF4038B75B0B" KeyPath="yes" Source="..\Examples\\InputOutput\PWM.plc" />
+					</Component>
+				</Directory>
+				<Directory Id="dirF66B0C3481D5094378CFDC5A3D27B2F6" Name="Latch">
+					<Component Id="cmpF84BC9CFA10062ACAF99AFBF73F86FC6" Guid="{A46D80CC-A62C-40EB-9F03-C197FC0EA37A}">
+						<File Id="fil435F22F0457E63AA4E4C76CCFC24C3C8" KeyPath="yes" Source="..\Examples\\Latch\LatchCommand.plc" />
+					</Component>
+					<Component Id="cmp35854FA49DCF7AFFD5EF38F412E81EFF" Guid="{467683C7-BCAA-4E63-BBEE-C56A7B114A81}">
+						<File Id="filD48B2BDB2D502A8E590B01C0037A1D19" KeyPath="yes" Source="..\Examples\\Latch\LatchDiscreteComponents.plc" />
+					</Component>
+					<Component Id="cmp46892C0637139149888B2DA7A202BA44" Guid="{C2F1B377-591C-4411-924E-C1368BD74E1D}">
+						<File Id="fil3F7D1DD5FEDCFCB986AA2945EC7A203D" KeyPath="yes" Source="..\Examples\\Latch\LatchSetResetCommands" />
+					</Component>
+				</Directory>
+				<Directory Id="dir4CE2A86E9AD14CAA9BCBDD7B321D0447" Name="Logic">
+					<Component Id="cmp5E3BCA60A4841991DFA33AEBE8A6A8E5" Guid="{A5CC7DC8-8BFF-4750-968E-84C022E78AE2}">
+						<File Id="fil5F6FEAA9EDDE9F28DEB45A291A03445F" KeyPath="yes" Source="..\Examples\\Logic\AndOrXorNot.plc" />
+					</Component>
+					<Component Id="cmpB3323B4D932B607E17703A0A9164853E" Guid="{1AB16A65-643D-4096-93B5-830E92DB97FC}">
+						<File Id="fil71EC227C5B304712DB9B2FEFC4C4A717" KeyPath="yes" Source="..\Examples\\Logic\CascadedLogic1.plc" />
+					</Component>
+					<Component Id="cmp90FFC63491ACA8A65D911F6AE28B9A9E" Guid="{0071DC96-4234-472B-B45D-47A0A1DF19A3}">
+						<File Id="fil3C912E52DC5CFDB17900BAE0B602D774" KeyPath="yes" Source="..\Examples\\Logic\CascadedLogic2.plc" />
+					</Component>
+					<Component Id="cmpC1CEBBEC88F2E3828155DB3BCDF3D419" Guid="{8D56ABD4-5695-4321-BA2D-67B5A276EC31}">
+						<File Id="fil0C3FD8A371604CA84147967C64183949" KeyPath="yes" Source="..\Examples\\Logic\CascadedLogic3.plc" />
+					</Component>
+					<Component Id="cmp662C11ECBAF8DDDC8923B82F4BC7F1D0" Guid="{A93B77BA-A81D-4327-9AE7-C704F4B4BB5C}">
+						<File Id="filF58E8640AFB7550DBD5081BF297F2DB3" KeyPath="yes" Source="..\Examples\\Logic\FourInputOr.plc" />
+					</Component>
+					<Component Id="cmp0ED142AB9B674C6773151FA433108496" Guid="{8F1DA855-134A-44A5-A441-23FB36512BD3}">
+						<File Id="filAD08AFD938F49492C2708A76DF46E792" KeyPath="yes" Source="..\Examples\\Logic\InvertedInputLogic.plc" />
+					</Component>
+					<Component Id="cmp92B97EC9E2A085A5CE0956AF71F1FC45" Guid="{B5CC1729-36BB-419D-9EBB-DE41443B47D3}">
+						<File Id="filF5FB660EA41517B4552F8F4838151BAD" KeyPath="yes" Source="..\Examples\\Logic\NandNorXnor.plc" />
+					</Component>
+				</Directory>
+				<Directory Id="dirFDA23F0F5C74F703A8F36F9C7C518B36" Name="SequentialFunctionChart">
+					<Component Id="cmp13097E4DBE979FBB7C676C016D1F32A5" Guid="{19C4A1F7-DE1A-4714-B9EE-FC2999A80405}">
+						<File Id="fil232B0E6D4C5638E504D6A83A5F742440" KeyPath="yes" Source="..\Examples\\SequentialFunctionChart\ParallelSwitchBranch.plc" />
+					</Component>
+					<Component Id="cmpC3B1C8A817B25B5385BDBE4AD042CAB1" Guid="{DA18599C-0D9C-4986-9E07-8F263F97C303}">
+						<File Id="filE0A2015F44AF396AF5CBBD6FC429F22D" KeyPath="yes" Source="..\Examples\\SequentialFunctionChart\ParallelSwitchBranchConverge.plc" />
+					</Component>
+					<Component Id="cmp142C3460DFF7491751626E31856658A3" Guid="{729F3D78-82A9-41E2-9A72-09856FD35B1F}">
+						<File Id="fil428D2B0CEBC609B98B1499F7A54A9FCF" KeyPath="yes" Source="..\Examples\\SequentialFunctionChart\RepeatingSwitchSequence" />
+					</Component>
+					<Component Id="cmp62FF51B22AE037723D03F8B31F1B409A" Guid="{8A963571-0B1D-471B-9BF7-149F745033E8}">
+						<File Id="filECCFAF8E0FFF21DB6D176B8BD8983AB4" KeyPath="yes" Source="..\Examples\\SequentialFunctionChart\SelectiveSwitchBranch.plc" />
+					</Component>
+					<Component Id="cmpCF07BEA9BBDBC0CC5BCF601921788D5A" Guid="{7EA8D6E5-51EC-41AE-9210-C6320D669D34}">
+						<File Id="filA8F735872BBC98FD7537FB11D62DC43B" KeyPath="yes" Source="..\Examples\\SequentialFunctionChart\SelectiveSwitchBranchConverge.plc" />
+					</Component>
+					<Component Id="cmp9EAEAFB862C83001FF8ADC8AB72E9C02" Guid="{B0FF0751-ACE9-4CD7-9A18-2EC6AB709AD2}">
+						<File Id="fil058D8A4D9AF0E93843A4E738082AEF5E" KeyPath="yes" Source="..\Examples\\SequentialFunctionChart\SimpleSwitchSequence.plc" />
+					</Component>
+					<Component Id="cmp6AA3A1912E22F5A0956914AE06B961FD" Guid="{7387F02A-C0E6-4AD1-B871-EE3474B2E515}">
+						<File Id="filAB28FED9D02FF96F5E94BEC21C4E62A8" KeyPath="yes" Source="..\Examples\\SequentialFunctionChart\SimpleTimedSequence.plc" />
+					</Component>
+				</Directory>
+				<Directory Id="dirC1EA81F07E9EEC3C0F44E319043C87C2" Name="TimeDelays">
+					<Component Id="cmpF9EA4944F56A76FC30E7089E34F81A43" Guid="{E7C1EB58-6D17-4C7D-B484-0557ABF83484}">
+						<File Id="fil317163596FDA66B16812BF012E04867B" KeyPath="yes" Source="..\Examples\\TimeDelays\DelayOff.plc" />
+					</Component>
+					<Component Id="cmp9A1FD3725AA69941383A310371566FF8" Guid="{D49BF64D-1FB7-4280-A5BB-C7305FE39BAC}">
+						<File Id="filCBAF5A0C0B709AFF4EA1387F78969EC8" KeyPath="yes" Source="..\Examples\\TimeDelays\DelayOn.plc" />
+					</Component>
+					<Component Id="cmpC2381880AA1B79E16A1F428D02A47913" Guid="{F44913DF-CD8E-4395-9182-33A9DFBCA076}">
+						<File Id="filB5B54FDA359A7BD16F134535480AC6D2" KeyPath="yes" Source="..\Examples\\TimeDelays\FixedPulse.plc" />
+					</Component>
+					<Component Id="cmp2FAE5570CF3C89D609727222D6F388A4" Guid="{B5584005-D245-454D-8A36-FE0FF7790BD2}">
+						<File Id="fil2B3AAF154F7EC810DE8C574E1CA70E1B" KeyPath="yes" Source="..\Examples\\TimeDelays\SwitchDebounce.plc" />
+					</Component>
+				</Directory>
+				<Directory Id="dir092CE81B32329DA7D33F3337EBE648AA" Name="Variables">
+					<Component Id="cmpE4C316155BCC856CBC9F249A5D44CED9" Guid="{AEAA59C3-AED2-47CC-9F4F-0CF986269E2B}">
+						<File Id="filC11C5F349C50E1307C7747E3AF2F66A5" KeyPath="yes" Source="..\Examples\\Variables\ComplexLogic.plc" />
+					</Component>
+				</Directory>
+				<Directory Id="dir211B1423D9424C1B61A90755C37E45B5" Name="Waveforms">
+					<Component Id="cmp432E3A510C84124EE453D226A866FA71" Guid="{6886DF15-ACC4-4969-ADB0-10F7312B0AFC}">
+						<File Id="filE660AE25E9E3D1B603FA67B5D02A3E75" KeyPath="yes" Source="..\Examples\\Waveforms\PulsedOutput.plc" />
+					</Component>
+				</Directory>
+			</Directory>
+		</DirectoryRef>
+	</Fragment>
+	<Fragment>
+		<ComponentGroup Id="SuperFormFiles1">
+			<ComponentRef Id="cmp4CD5F4A9A672A90DD1EA036118470238" />
+			<ComponentRef Id="cmp3DC9630D2A46C9E463C86F26F313B77A" />
+			<ComponentRef Id="cmp5742B25DA2D1E90DFDC1B4DB9E88EA76" />
+			<ComponentRef Id="cmp4429947F784193813861554F96A0519D" />
+			<ComponentRef Id="cmp0FA41CD047645980CE0467DD4713DF88" />
+			<ComponentRef Id="cmp6CDD1ACB372339C6C32BBD02914292E4" />
+			<ComponentRef Id="cmp6087CE841C6B3FFF67969C0304373407" />
+			<ComponentRef Id="cmpE5F7B33951F43C1E77FC299C7FF1D17E" />
+			<ComponentRef Id="cmp9738DB4166BDDDD096EE9ADB521AD1E0" />
+			<ComponentRef Id="cmp3D5A59CB1D61FFC8FB7784A8BE164AC1" />
+			<ComponentRef Id="cmpBA9E3F016E0CD4D2C1D7AD5F28A02BEC" />
+			<ComponentRef Id="cmp1FBFA40CE98C45E542FCA7C97E837B2C" />
+			<ComponentRef Id="cmp1A4EAA8B8C64FB5079410094A5E97F07" />
+			<ComponentRef Id="cmpF84BC9CFA10062ACAF99AFBF73F86FC6" />
+			<ComponentRef Id="cmp35854FA49DCF7AFFD5EF38F412E81EFF" />
+			<ComponentRef Id="cmp46892C0637139149888B2DA7A202BA44" />
+			<ComponentRef Id="cmp5E3BCA60A4841991DFA33AEBE8A6A8E5" />
+			<ComponentRef Id="cmpB3323B4D932B607E17703A0A9164853E" />
+			<ComponentRef Id="cmp90FFC63491ACA8A65D911F6AE28B9A9E" />
+			<ComponentRef Id="cmpC1CEBBEC88F2E3828155DB3BCDF3D419" />
+			<ComponentRef Id="cmp662C11ECBAF8DDDC8923B82F4BC7F1D0" />
+			<ComponentRef Id="cmp0ED142AB9B674C6773151FA433108496" />
+			<ComponentRef Id="cmp92B97EC9E2A085A5CE0956AF71F1FC45" />
+			<ComponentRef Id="cmp13097E4DBE979FBB7C676C016D1F32A5" />
+			<ComponentRef Id="cmpC3B1C8A817B25B5385BDBE4AD042CAB1" />
+			<ComponentRef Id="cmp142C3460DFF7491751626E31856658A3" />
+			<ComponentRef Id="cmp62FF51B22AE037723D03F8B31F1B409A" />
+			<ComponentRef Id="cmpCF07BEA9BBDBC0CC5BCF601921788D5A" />
+			<ComponentRef Id="cmp9EAEAFB862C83001FF8ADC8AB72E9C02" />
+			<ComponentRef Id="cmp6AA3A1912E22F5A0956914AE06B961FD" />
+			<ComponentRef Id="cmpF9EA4944F56A76FC30E7089E34F81A43" />
+			<ComponentRef Id="cmp9A1FD3725AA69941383A310371566FF8" />
+			<ComponentRef Id="cmpC2381880AA1B79E16A1F428D02A47913" />
+			<ComponentRef Id="cmp2FAE5570CF3C89D609727222D6F388A4" />
+			<ComponentRef Id="cmpE4C316155BCC856CBC9F249A5D44CED9" />
+			<ComponentRef Id="cmp432E3A510C84124EE453D226A866FA71" />
+		</ComponentGroup>
+	</Fragment>
+</Wix>
