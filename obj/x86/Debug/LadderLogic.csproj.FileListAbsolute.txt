@@ -373,3 +373,4 @@ G:\Disk_H\ArduinoLadder\bin\Debug\Element\ResetCoil.xml
 G:\Disk_H\ArduinoLadder\bin\Debug\ladder_icon.png
 G:\Disk_H\ArduinoLadder\bin\Debug\LadderLogic.exe
 G:\Disk_H\ArduinoLadder\bin\Debug\LadderLogic.pdb
+G:\Disk_H\ArduinoLadder\obj\x86\Debug\LadderLogic.csprojResolveAssemblyReference.cache

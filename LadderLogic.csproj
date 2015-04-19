@@ -144,6 +144,8 @@
     <Compile Include="CTool\FunctionRule\PulseTimerRule.cs" />
     <Compile Include="CTool\FunctionRule\SetCoilRule.cs" />
     <Compile Include="CTool\FunctionRule\ResetCoilRule.cs" />
+    <Compile Include="Updater\UpdateHelper.cs" />
+    <Compile Include="Updater\Versions.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

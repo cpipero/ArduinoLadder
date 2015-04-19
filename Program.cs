@@ -2,6 +2,7 @@
 using System.Configuration;
 using GLib;
 using Gtk;
+using LadderLogic.Updater;
 
 namespace LadderLogic
 {
@@ -24,7 +25,7 @@ namespace LadderLogic
 			ExceptionManager.UnhandledException += 
 				e => new UnhandledExceptionDialog(_main, e.ExceptionObject as Exception).ShowDialog();
 
-
+			
 			var isElementsView = ConfigurationManager
 				.AppSettings ["ElementsView"]
 				.ToLowerInvariant () == "true";

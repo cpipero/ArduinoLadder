@@ -4,6 +4,7 @@ using System.Linq;
 using System.Reflection;
 using System.Collections.Generic;
 using System.Diagnostics;
+using LadderLogic.Updater;
 
 namespace LadderLogic.Presentation
 {
@@ -353,18 +354,17 @@ namespace LadderLogic.Presentation
 
 			var surfaces = AppController.Instance.GetPalette ();
 
-			uint count = (uint)surfaces.Sum (s => s.Segments.Count);
-			table1 = new Gtk.Table (2, count / 2, true);
+			var count = (uint)surfaces.Sum (s => s.Segments.Count);
+			table1 = new Table (2, count / 2, true);
 
-			int index = 0;
+			var index = 0;
 			for (uint i = 0; i < count / 2; i++) {
 				for (uint j = 0; j < 2; j++) {
-					if (surfaces.Count () > index) {
-						var surf = surfaces [index++];
-						var el = new ElementDrawing(surf, 2, 2 );
-						table1.Attach (el, i, i+1, j, j+(uint)surf.Segments.Count());
-						el.Show ();
-					}
+					if (surfaces.Count() <= index) continue;
+					var surf = surfaces [index++];
+					var el = new ElementDrawing(surf, 2, 2 );
+					table1.Attach (el, i, i+1, j, j+(uint)surf.Segments.Count());
+					el.Show ();
 				}
 			}
 
@@ -385,7 +385,12 @@ namespace LadderLogic.Presentation
 			tblArdulino.Attach (code, 0, 1, 0, 1);
 			code.CreateCode += CController.Instance.CreateCode;
 			code.Show ();
+			this.Shown += AppWindow_Shown;
+		}
 
+		void AppWindow_Shown(object sender, EventArgs e)
+		{
+			UpdateHelper.CompareVersions(this);
 		}
 
 
