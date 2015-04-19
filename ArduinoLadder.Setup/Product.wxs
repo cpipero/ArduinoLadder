@@ -7,15 +7,16 @@
 		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
 		
 		<Feature Id="ProductFeature" Title="ArduinoLadder.Setup" Level="1">
-		 	  <ComponentRef Id="ProductComponent" />
+		 			<ComponentRef Id="ProductComponent" />
 		      <ComponentRef Id="Buttons" />
 		      <ComponentRef Id="Compiller" />
 		      <ComponentRef Id="CTool" />
 		      <ComponentRef Id="Element" />
 		      <ComponentRef Id="File_Config" />
-			  <ComponentRef Id="ApplicationShortcut"/>
-			  <ComponentRef Id="DesktopShortcut"/>
-			  <ComponentGroupRef Id="SuperFormFiles"/>			
+					<ComponentRef Id="INSTALLFOLDER_Permission"/>
+					<ComponentRef Id="ApplicationShortcut"/>
+					<ComponentRef Id="DesktopShortcut"/>
+					<ComponentGroupRef Id="SuperFormFiles"/>			
 		</Feature>
 		<CustomAction  Id='Install_Driver_Arduino_64' Execute='deferred'
 	  Directory='dir346BD9ED4EF743ECA16F5DE446F0A2BF'  ExeCommand='&quot;[dir346BD9ED4EF743ECA16F5DE446F0A2BF]dpinst-amd64.exe&quot;' Return='ignore' />
@@ -250,6 +251,13 @@
 					<File Id="filCEC5A4DD4FCAF1AC8C0658EA93E83182" KeyPath="yes" Source="..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\Static\i386\ftd2xx.lib" />
 				</Component>
 		</ComponentGroup>
+			<DirectoryRef Id="INSTALLFOLDER">
+        <Component Id="INSTALLFOLDER_Permission" Guid="67704914-1ee6-40e4-98f9-820833365bb0">
+            <CreateFolder>
+                <util:PermissionEx User="Users" GenericAll="yes"/>
+            </CreateFolder>
+        </Component>
+    </DirectoryRef>
 	</Fragment>
 
 </Wix>

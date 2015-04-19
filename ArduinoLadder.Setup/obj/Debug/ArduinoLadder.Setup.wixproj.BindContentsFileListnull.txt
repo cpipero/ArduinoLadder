@@ -3,6 +3,38 @@
 ..\bin\Debug\Buttons\CreateCode.xml
 ..\bin\Debug\Element\Cursor.xml
 ..\bin\Debug\Element\CycleTimer.xml
+..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\arduino-org.cat
+..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\ftdibus.inf
+..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\ftdibus.cat
+..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\amd64\ftbusui.dll
+..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\ftdiport.cat
+..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\i386\ftserui2.dll
+..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\amd64\ftd2xx64.dll
+..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\ftdiport.inf
+..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\i386\ftbusui.dll
+..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\Old_Arduino_Drivers.zip
+..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\i386\ftd2xx.dll
+..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\amd64\ftser2k.sys
+..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\dpinst-amd64.exe
+..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\ftd2xx.h
+..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\i386\ftdibus.sys
+..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\i386\ftcserco.dll
+..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\README.txt
+..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\amd64\ftcserco.dll
+..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\arduino-org.inf
+..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\i386\ftser2k.sys
+..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\i386\ftd2xx.lib
+..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\LogoVerificationReport.pdf
+..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\Static\amd64\ftd2xx.lib
+..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\amd64\ftlang.dll
+..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\amd64\ftserui2.dll
+..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\dpinst-x86.exe
+..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\Static\i386\ftd2xx.lib
+..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\i386\ftlang.dll
+..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\arduino.inf
+..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\amd64\ftd2xx.lib
+..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\arduino.cat
+..\Libs\arduino-1.6.3-windows\arduino-1.6.3\drivers\FTDI USB Drivers\amd64\ftdibus.sys
 ..\bin\Debug\ladder_icon.png
 ..\bin\Debug\LadderLogic.exe.config
 ..\bin\Debug\File\Config\ladderlogic.conf.xml
