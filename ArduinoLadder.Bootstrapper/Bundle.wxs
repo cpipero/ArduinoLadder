@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi"  xmlns:util="http://schemas.microsoft.com/wix/UtilExtension" xmlns:bal="http://schemas.microsoft.com/wix/BalExtension">
-	<Bundle Name="Arduino Ladder" Version="1.0.0.0" Manufacturer="Beeond Inc." UpgradeCode="626fd23a-2d9f-40c6-94f4-d8daab60a3ea" IconSourceFile="..\ladder_icon.ico">
+	<Bundle Name="Arduino Ladder" Version="1.0.0.2" Manufacturer="Beeond Inc." UpgradeCode="626fd23a-2d9f-40c6-94f4-d8daab60a3ea" IconSourceFile="..\ladder_icon.ico">
 		<BootstrapperApplicationRef Id="WixStandardBootstrapperApplication.RtfLicense" >
 			<bal:WixStandardBootstrapperApplication
             LicenseFile="License.rtf"

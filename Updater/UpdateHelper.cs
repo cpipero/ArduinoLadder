@@ -1,6 +1,8 @@
 ﻿using System;
 using System.IO;
 using Gtk;
+using LadderLogic.Presentation;
+using System.Windows.Forms;
 
 namespace LadderLogic.Updater
 {
@@ -12,7 +14,7 @@ namespace LadderLogic.Updater
 		public static string RemoteFile = "http://localhost/ArduinoLadder/ArduinoLadder.exe";
 		public static string LocalFile = "ArduinoLadder.exe";
 
-		public static void CompareVersions(Window parent)
+		public static bool CompareVersions(Window parent)
 		{
 			_parent = parent;
 			var downloadToPath = Path.GetTempPath();
@@ -20,7 +22,7 @@ namespace LadderLogic.Updater
 			var remoteVersion = Versions.RemoteVersion(RemoteVersion);
 			if (string.IsNullOrWhiteSpace(remoteVersion)) //prevent to reload first version
 			{
-				return;
+				return true;
 			}
 			var c = 0;
 			try
@@ -35,7 +37,10 @@ namespace LadderLogic.Updater
 			if (c < 0)
 			{
 				BeginDownload(RemoteFile, downloadToPath, remoteVersion, LocalFile);
+				return false;
 			}
+
+			return true;
 		}
 
 		private static void BeginDownload(string remoteUrl, string downloadToPath, string version, string executeTarget)
@@ -69,12 +74,10 @@ namespace LadderLogic.Updater
 				downloadToPath += "\\";
 
 			var exePath = downloadToPath + currentVersion + "\\" + executeTarget; // Download folder\version\ + executable
-			var md = new MessageDialog(_parent,
-				DialogFlags.DestroyWithParent, MessageType.Info,
-				ButtonsType.YesNo, "New version available. Do you want to install?");
-			if ((ResponseType) md.Run() != ResponseType.Yes) return;
-			System.Diagnostics.Process.Start(exePath);
-			Environment.Exit(0);
+			if (MessageBox.Show (null, "New version available. Do you want to install?", "Arduino Ladder update", MessageBoxButtons.YesNo) == DialogResult.Yes) {
+				System.Diagnostics.Process.Start(exePath);
+				Environment.Exit(0);
+			}
 		}
 	}
 }

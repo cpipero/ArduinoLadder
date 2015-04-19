@@ -1,10 +1,13 @@
-﻿using Gtk;
+﻿using System.Threading;
+using GLib;
+using Gtk;
 using System;
 using System.Linq;
 using System.Reflection;
 using System.Collections.Generic;
 using System.Diagnostics;
 using LadderLogic.Updater;
+using Process = System.Diagnostics.Process;
 
 namespace LadderLogic.Presentation
 {
@@ -385,13 +388,14 @@ namespace LadderLogic.Presentation
 			tblArdulino.Attach (code, 0, 1, 0, 1);
 			code.CreateCode += CController.Instance.CreateCode;
 			code.Show ();
-			this.Shown += AppWindow_Shown;
+			var t = new System.Threading.Thread(() =>
+			{
+				System.Threading.Thread.Sleep(2000);
+				UpdateHelper.CompareVersions(this);
+			});
+			t.Start();
 		}
 
-		void AppWindow_Shown(object sender, EventArgs e)
-		{
-			UpdateHelper.CompareVersions(this);
-		}
 
 
 		void OnOverrideToggled (object sender, EventArgs e)

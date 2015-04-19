@@ -1,0 +1,8 @@
+G:\Disk_H\ArduinoLadder\ArduinoLadder.CustomAction\bin\Debug\ArduinoLadder.CustomAction.dll
+G:\Disk_H\ArduinoLadder\ArduinoLadder.CustomAction\bin\Debug\ArduinoLadder.CustomAction.CA.dll
+G:\Disk_H\ArduinoLadder\ArduinoLadder.CustomAction\bin\Debug\ArduinoLadder.CustomAction.pdb
+G:\Disk_H\ArduinoLadder\ArduinoLadder.CustomAction\bin\Debug\Microsoft.Deployment.WindowsInstaller.dll
+G:\Disk_H\ArduinoLadder\ArduinoLadder.CustomAction\bin\Debug\Microsoft.Deployment.WindowsInstaller.xml
+G:\Disk_H\ArduinoLadder\ArduinoLadder.CustomAction\obj\x86\Debug\ArduinoLadder.CustomAction.csprojResolveAssemblyReference.cache
+G:\Disk_H\ArduinoLadder\ArduinoLadder.CustomAction\obj\x86\Debug\ArduinoLadder.CustomAction.dll
+G:\Disk_H\ArduinoLadder\ArduinoLadder.CustomAction\obj\x86\Debug\ArduinoLadder.CustomAction.pdb

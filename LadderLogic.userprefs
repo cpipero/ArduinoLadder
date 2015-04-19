@@ -1,6 +1,12 @@
 ﻿<Properties GitUserInfo="UsingGIT" StartupItem="LadderLogic.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Updater\UpdateHelper.cs">
+    <Files>
+      <File FileName="g:\Disk_H\ArduinoLadder\Program.cs" Line="1" Column="1" />
+      <File FileName="MainWindow.cs" Line="1" Column="1" />
+      <File FileName="Updater\UpdateHelper.cs" Line="2" Column="2" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
