@@ -1,3 +1,0 @@
-G:\Disk_H\ArduinoLadder\ArduinoLadder.Bootstrapper\bin\Debug\gtk-sharp-2.12.22.msi
-G:\Disk_H\ArduinoLadder\ArduinoLadder.Bootstrapper\bin\Debug\ArduinoLadder.exe
-G:\Disk_H\ArduinoLadder\ArduinoLadder.Bootstrapper\bin\Debug\ArduinoLadder.wixpdb

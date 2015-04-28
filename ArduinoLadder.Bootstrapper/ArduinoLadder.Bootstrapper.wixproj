@@ -7,9 +7,10 @@
     <ProjectGuid>626fd23a-2d9f-40c6-94f4-d8daab60a3ea</ProjectGuid>
     <SchemaVersion>2.0</SchemaVersion>
     <OutputName>ArduinoLadder</OutputName>
-    <OutputType>Bundle</OutputType>
+    <OutputType>Package</OutputType>
     <WixTargetsPath Condition=" '$(WixTargetsPath)' == '' AND '$(MSBuildExtensionsPath32)' != '' ">$(MSBuildExtensionsPath32)\Microsoft\WiX\v3.x\Wix.targets</WixTargetsPath>
     <WixTargetsPath Condition=" '$(WixTargetsPath)' == '' ">$(MSBuildExtensionsPath)\Microsoft\WiX\v3.x\Wix.targets</WixTargetsPath>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <OutputPath>bin\$(Configuration)\</OutputPath>
@@ -43,7 +44,8 @@
   </ItemGroup>
   <Import Project="$(WixTargetsPath)" />
   <PropertyGroup>
-    <PreBuildEvent>copy /y "$(ProjectDir)updateVersion.txt" "$(TargetDir)"</PreBuildEvent>
+    <PreBuildEvent>copy /y "$(ProjectDir)updateVersion.txt" "$(TargetDir)"
+java -jar  $(SolutionDir)\FileWrites\FileWrites.jar $(SolutionDir)\Properties\AssemblyInfo.cs $(SolutionDir)\ArduinoLadder.Bootstrapper\Bundle.wxs</PreBuildEvent>
   </PropertyGroup>
   <!--
 	To modify your build process, add your task inside one of the targets below and uncomment it.

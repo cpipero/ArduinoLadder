@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi" xmlns:util="http://schemas.microsoft.com/wix/UtilExtension">
-	<Product Id="*" Name="Arduino Ladder" Language="1033" Version="1.0.0.2" Manufacturer="Beeond Inc." UpgradeCode="dd17e2e3-a29d-4f23-8814-301962ad6e52">
+	<Product Id="*" Name="Arduino Ladder" Language="1033" Version="1.0.0.4" Manufacturer="Beeond Inc." UpgradeCode="dd17e2e3-a29d-4f23-8814-301962ad6e52">
 		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine"  />
 
 		<Media Id="1" EmbedCab="yes" Cabinet="media1.cab"/>

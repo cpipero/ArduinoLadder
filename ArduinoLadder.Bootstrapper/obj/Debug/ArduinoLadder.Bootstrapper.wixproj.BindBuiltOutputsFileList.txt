@@ -1,2 +1,0 @@
-G:\Disk_H\ArduinoLadder\ArduinoLadder.Bootstrapper\bin\Debug\ArduinoLadder.exe
-G:\Disk_H\ArduinoLadder\ArduinoLadder.Bootstrapper\bin\Debug\ArduinoLadder.wixpdb

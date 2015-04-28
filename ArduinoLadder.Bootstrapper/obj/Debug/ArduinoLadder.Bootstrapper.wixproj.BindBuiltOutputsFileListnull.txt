@@ -1,0 +1,2 @@
+G:\Eugene\ArduinoLadder\ArduinoLadder.Bootstrapper\bin\Debug\ArduinoLadder.msi
+G:\Eugene\ArduinoLadder\ArduinoLadder.Bootstrapper\bin\Debug\ArduinoLadder.wixpdb
