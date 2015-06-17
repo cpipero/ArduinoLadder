@@ -1,10 +1,35 @@
 ﻿<Properties GitUserInfo="UsingGIT" StartupItem="LadderLogic.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Updater\UpdateHelper.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CTool\FunctionRule\FunctionTypeExtension.cs">
     <Files>
-      <File FileName="g:\Disk_H\ArduinoLadder\Program.cs" Line="1" Column="1" />
       <File FileName="MainWindow.cs" Line="1" Column="1" />
-      <File FileName="Updater\UpdateHelper.cs" Line="2" Column="2" />
+      <File FileName="Updater\UpdateHelper.cs" Line="29" Column="1" />
+      <File FileName="Brushes\Arc3PointsBrush.cs" Line="169" Column="4" />
+      <File FileName="Brushes\ArcBrush.cs" Line="1" Column="1" />
+      <File FileName="Brushes\ConnectorBrush.cs" Line="1" Column="1" />
+      <File FileName="Brushes\LineBrush.cs" Line="1" Column="1" />
+      <File FileName="Brushes\RectangleBrush.cs" Line="1" Column="1" />
+      <File FileName="Brushes\SurfaceLineBrush.cs" Line="1" Column="1" />
+      <File FileName="Brushes\TextBrush.cs" Line="42" Column="13" />
+      <File FileName="Buttons\CreateCode.xml" Line="1" Column="1" />
+      <File FileName="Controller\State\CursorState.cs" Line="1" Column="1" />
+      <File FileName="Controller\State\ElementState.cs" Line="1" Column="1" />
+      <File FileName="Controller\State\EmptyState.cs" Line="8" Column="15" />
+      <File FileName="Controller\State\InitState.cs" Line="1" Column="1" />
+      <File FileName="Controller\State\LineState.cs" Line="1" Column="1" />
+      <File FileName="Controller\State\PaletteState.cs" Line="1" Column="1" />
+      <File FileName="Controller\State\PropertiesState.cs" Line="1" Column="1" />
+      <File FileName="Controller\State\State.cs" Line="1" Column="1" />
+      <File FileName="Controller\State\StateType.cs" Line="1" Column="1" />
+      <File FileName="Controller\AppController.cs" Line="224" Column="4" />
+      <File FileName="Controller\DrawingAreaController.cs" Line="1" Column="1" />
+      <File FileName="Controller\VariableExtensions.cs" Line="1" Column="1" />
+      <File FileName="CTool\Arduino\EnvironmentVariables.cs" Line="1" Column="1" />
+      <File FileName="CTool\FunctionRule\CoilRule.cs" Line="1" Column="1" />
+      <File FileName="CTool\FunctionRule\ContactRule.cs" Line="46" Column="24" />
+      <File FileName="CTool\FunctionRule\CycleTimerRule.cs" Line="1" Column="1" />
+      <File FileName="CTool\FunctionRule\FunctionRule.cs" Line="1" Column="1" />
+      <File FileName="CTool\FunctionRule\FunctionTypeExtension.cs" Line="97" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -39,8 +39,7 @@ namespace LadderLogic.Brushes
 				case AlignType.Left:
 					dX = 0;
 					break;
-				default:
-					//throw new ArgumentException ("Invalid argument: " + text.Align);
+				default:					
 					return;
 				}
 			}
@@ -56,8 +55,7 @@ namespace LadderLogic.Brushes
 				case VAlignType.Bottom:
 					dY = 0;
 					break;
-				default:
-					//throw new ArgumentException ("Invalid argument: " + text.VAlign);
+				default:					
 					return;
 				}
 			}

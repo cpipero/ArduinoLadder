@@ -363,12 +363,7 @@ namespace LadderLogic.Geometry
 						t.Start.Y);
 				}
 
-				if (!t.FixedSize) {
-					/*t.ScaledFontSize = Math.Sqrt (
-						Math.Pow (seg.Position.GeometryWidth, 2) + 
-						Math.Pow (seg.Position.GeometryHeight, 2)) * 
-						t.FontSize / 
-						200;*/
+				if (!t.FixedSize) {					
 					t.ScaledFontSize = seg.Position.GeometryHeight * t.FontSize / 100;
 				} else {
 					t.ScaledFontSize = t.FontSize;

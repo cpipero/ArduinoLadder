@@ -85,12 +85,6 @@ namespace LadderLogic.Controller
 				{
 					return;
 				}
-
-				if (previousState != null) {
-					//throw new ArgumentException (string.Format("Previous {0} New {1}",
-					//	Enum.GetName (typeof(StateType), previousState.Type),
-					//	Enum.GetName (typeof(StateType), _currentState.Type)));
-				}
 			} 
 		}
 
@@ -219,12 +213,7 @@ namespace LadderLogic.Controller
 		public void InitConfig()
 		{
 			var fileName = ("File" + Path.DirectorySeparatorChar + "Config" //FIXME Move path to appSettings
-			                  + Path.DirectorySeparatorChar + "ladderlogic.conf.xml").GetAbsolutePath ();
-			/*config = new LocalConfig ();
-			var result = ConfigManager.Write (config, fileName);
-			if (!result) {
-				throw new Exception ("write error for config");
-			}*/
+			                  + Path.DirectorySeparatorChar + "ladderlogic.conf.xml").GetAbsolutePath ();			
 			Config = ConfigManager.Read<LocalConfig>(fileName);
 		}
 
@@ -232,22 +221,6 @@ namespace LadderLogic.Controller
 		void InitPalette()
 		{
 			_palette.Clear ();
-			/*
-			var elementNames = new [] { 
-				"NcContact.xml", 
-				"NoContact.xml", 
-				"Coil.xml", 
-				"NotCoil.xml", 
-				"OnTimer.xml", 
-				"OffTimer.xml", 
-				"CycleTimer.xml",
-				"SetCoil.xml",
-				"ResetCoil.xml",
-				"Line.xml", 
-				"Properties.xml",
-				"Cursor.xml",
-				"Latch.xml"};
-				*/
 
 			var elementNames = Directory.GetFiles ((@"Element"+  Path.DirectorySeparatorChar).GetAbsolutePath ());
 

@@ -103,7 +103,7 @@ namespace LadderLogic.Drawing
 				segment.Selected = true;
 				QueueDraw ();
 
-				var timer = new System.Threading.Timer(obj => 
+				var timer = new Timer(obj => 
 					{ 
 						segment.Selected = false;
 						QueueDraw (); 

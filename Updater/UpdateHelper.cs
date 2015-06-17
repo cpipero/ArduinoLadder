@@ -1,7 +1,6 @@
 ﻿using System;
 using System.IO;
 using Gtk;
-using LadderLogic.Presentation;
 using System.Windows.Forms;
 
 namespace LadderLogic.Updater
@@ -25,13 +24,10 @@ namespace LadderLogic.Updater
 				return true;
 			}
 			var c = 0;
-			try
+			Version v;
+			if(Version.TryParse(localVersion, out v))
 			{
-				c = Version.Parse(localVersion).CompareTo(Version.Parse(remoteVersion));
-			}
-			catch (Exception ex)
-			{
-                
+				c = v.CompareTo(Version.Parse(remoteVersion));
 			}
 			
 			if (c < 0)

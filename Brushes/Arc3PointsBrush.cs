@@ -167,15 +167,6 @@ namespace LadderLogic.Brushes
 					arcEnd);
 			}
 
-			/*			grw.MoveTo (
-							arc.Start.GeometryX, 
-							arc.Start.GeometryY);
-						grw.LineTo (
-							arc.Middle.GeometryX, 
-							arc.Middle.GeometryY);
-						grw.LineTo (
-							arc.End.GeometryX, 
-							arc.End.GeometryY);*/
 
 			grw.Stroke();
 		}

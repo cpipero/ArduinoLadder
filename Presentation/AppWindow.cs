@@ -575,7 +575,6 @@ namespace LadderLogic.Presentation
 			}
 
 			var text = new CellRendererText {Style = Pango.Style.Oblique};
-			//actorText.BackgroundGdk = new Gdk.Color(0x63,0,0);
 			cb.PackStart(text,true);
 			cb.AddAttribute (text, "text", 0);
 		}
